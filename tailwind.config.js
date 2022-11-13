@@ -17,6 +17,9 @@ module.exports = {
           100: "#fc128d",
         },
       },
+      rotate: {
+        210: "210deg",
+      },
     },
   },
   plugins: [],
