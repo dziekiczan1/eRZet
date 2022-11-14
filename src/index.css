@@ -16,3 +16,35 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.indicator {
+  width: 120px;
+  height: 120px;
+  background-color: #1a1f2c;
+  border-radius: 50%;
+  border: 6px solid #1a1f2c;
+}
+
+.indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 #1a1f2c;
+}
+
+.indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 #1a1f2c;
+}

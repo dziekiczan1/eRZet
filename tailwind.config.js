@@ -20,6 +20,9 @@ module.exports = {
       rotate: {
         210: "210deg",
       },
+      backgroundImage: {
+        "header-bg": "url('bg-header.png')",
+      },
     },
   },
   plugins: [],

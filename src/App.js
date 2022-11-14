@@ -1,6 +1,4 @@
 import logo from "../src/logo.png";
-import circle from "../src/circle.png";
-import { motion } from "framer-motion";
 
 const App = () => {
   return (
@@ -16,7 +14,7 @@ const App = () => {
               className="absolute top-0 left-[-50px] rotate-210 brightness-70"
             /> */}
           </div>
-          <ul className="flex flex-row w-1/2 text-white z-50 gap-2">
+          <ul className="flex flex-row w-3/4 text-white z-50 gap-8">
             <li className="flex flex-col items-center justify-center grow border-b-2 border-orange-100 font-semibold">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +39,9 @@ const App = () => {
                   d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
                 />
               </svg>
-              <a href="#">O nas</a>
+              <a href="#" className="pb-1">
+                O nas
+              </a>
             </li>
             <li className="flex flex-col items-center justify-center grow border-b-2 border-gray-700">
               <svg
@@ -86,8 +86,11 @@ const App = () => {
         </nav>
       </header>
 
-      <main>
-        <h1>Main</h1>
+      <main className="relative flex justify-center">
+        <div className="indicator absolute -top-[60px]"></div>
+        <div className="h-[500px] bg-[#b1bdce] w-full">
+          <h1>Main</h1>
+        </div>
       </main>
 
       <footer>
