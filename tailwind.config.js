@@ -11,6 +11,7 @@ module.exports = {
           100: "#0adab9",
         },
         orange: {
+          50: "#eda607",
           100: "#feb106",
         },
         pink: {
