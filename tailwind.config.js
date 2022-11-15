@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors: {
         navy: {
+          400: "#36415c",
+          500: "#2d364c",
+          600: "#232a3c",
           700: "#1a1f2c",
+          900: "#07080c",
         },
         azure: {
           100: "#0adab9",

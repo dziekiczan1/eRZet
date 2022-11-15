@@ -8,7 +8,7 @@ const App = () => {
       </header>
       <main className="relative flex justify-center">
         <div className="indicator absolute -top-[60px]"></div>
-        <div className="h-[500px] bg-[#b1bdce] w-full">
+        <div className="h-[500px] bg-navy-500 w-full">
           <h1>Main</h1>
         </div>
       </main>
