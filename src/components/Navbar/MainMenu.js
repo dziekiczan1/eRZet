@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const MainMenu = ({ menuItems }) => {
   const [active, setActive] = useState("0");
+  const { t } = useTranslation();
 
   return (
     <ul className="flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer">
@@ -25,7 +27,7 @@ const MainMenu = ({ menuItems }) => {
               d={item.svgD}
             />
           </svg>
-          <a href="#">{item.fullName}</a>
+          <a href="#">{t(item.name)}</a>
         </li>
       ))}
     </ul>

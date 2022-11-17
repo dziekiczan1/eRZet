@@ -2,7 +2,7 @@ import Navbar from "./components/Navbar/Navbar";
 import { useTranslation } from "react-i18next";
 
 const App = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>

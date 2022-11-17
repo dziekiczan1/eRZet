@@ -5,11 +5,21 @@ const resources = {
   en: {
     translation: {
       welcome: "Welcome on company site eRZet - Piotr Rzadkowolski",
+      home: "Home Page",
+      about: "About Us",
+      portfolio: "Portfolio",
+      pricelist: "Price List",
+      contact: "Contact",
     },
   },
   pl: {
     translation: {
       welcome: "Witaj na stronie firmy eRZet - Piotr Rzadkowolski",
+      home: "Strona Główna",
+      about: "O nas",
+      portfolio: "Realizacje",
+      pricelist: "Cennik",
+      contact: "Kontakt",
     },
   },
 };
