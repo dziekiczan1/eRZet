@@ -48,3 +48,110 @@ code {
   border-top-left-radius: 20px;
   box-shadow: 0px -10px 0 0 #1a1f2c;
 }
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.container .drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(6, 21, 48, 0.9);
+  border-radius: 47% 53% 70% 30% / 30% 43% 57% 70%;
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .drop:hover {
+  border-radius: 50%;
+}
+
+.container .drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #f00;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container .drop::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 110px;
+  width: 15px;
+  height: 15px;
+  background: #f00;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.container .drop .content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.container .drop .content h2 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #36415c;
+  border-radius: 50%;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05), 15px 10px 15px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ff0f5b;
+}
+
+.container .drop .content a {
+  position: relative;
+  padding: 10px 25px;
+  background: #ff0f5b;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.container .drop .content a:hover {
+  opacity: 1;
+}
+
+.container .drop .content a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}
