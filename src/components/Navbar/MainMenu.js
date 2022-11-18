@@ -6,7 +6,7 @@ const MainMenu = ({ menuItems }) => {
   const { t } = useTranslation();
 
   return (
-    <ul className="flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer">
+    <ul className="flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer my-16">
       {menuItems?.map((item) => (
         <li
           key={item.id}
