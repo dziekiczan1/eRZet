@@ -11,6 +11,7 @@ const App = () => {
       </header>
       <main className="relative flex justify-center">
         <div className="indicator absolute -top-[60px]"></div>
+        <div className="absolute w-[34px] top-[34px] border-b-2 border-orange-100 mt-2"></div>
         <div className="arrow bounce absolute">
           <svg width="36px" height="36px" viewBox="0 0 24 24">
             <path
@@ -25,7 +26,7 @@ const App = () => {
               {t("welcome")}
             </h1>
 
-            <div className="mx-auto w-3/4 flex justify-between gap-20">
+            <div className="mx-auto w-3/4 flex flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20">
               <div className="container flex justify-center items-center">
                 <div className="drop">
                   <div className="content">
