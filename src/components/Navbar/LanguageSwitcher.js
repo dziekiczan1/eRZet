@@ -5,7 +5,7 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="absolute w-3/4 flex justify-end gap-8 mt-6">
+    <div className="absolute w-3/4 flex justify-end gap-4 mt-6">
       <div
         onClick={() => {
           i18n.changeLanguage("pl");
@@ -14,13 +14,19 @@ const LanguageSwitcher = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 10"
-          width="48"
-          height="30"
+          width="36"
+          height="22"
         >
           <path fill="#fff" d="M0 0h16v10H0z" />
           <path fill="#dc143c" d="M0 5h16v5H0z" />
         </svg>
       </div>
+      <svg width="24" height="24" viewBox="0 0 24 24">
+        <path
+          fill="#0adab9"
+          d="M21,9L17,5V8H10V10H17V13M7,11L3,15L7,19V16H14V14H7V11Z"
+        />
+      </svg>
       <div
         onClick={() => {
           i18n.changeLanguage("en");
@@ -29,8 +35,8 @@ const LanguageSwitcher = () => {
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 60 30"
-          width="48"
-          height="30"
+          width="36"
+          height="22"
         >
           <clipPath id="a">
             <path d="M0 0v30h60V0z" />
