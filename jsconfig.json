@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "checkJs": true,
+    "jsx": "react",
+    "paths": {
+      "@components/*": ["components/*"],
+      "@tailwind": ["tailwind.config.js"]
+    }
+  }
+}
