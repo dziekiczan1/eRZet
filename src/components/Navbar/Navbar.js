@@ -14,7 +14,7 @@ const Navbar = () => {
           src={circle}
           alt="eRZet bg-circle"
           width={210}
-          className="absolute -top-6 left-[52px] rotate-[230deg] brightness-70"
+          className="absolute -top-6 lg:left-[-22px] 2xl:left-[52px] rotate-[230deg] brightness-70"
         />
       </div>
       <LanguageSwitcher />
