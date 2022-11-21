@@ -1,7 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import dropItems from "./DropItems";
 
 const Drop = () => {
+  const { t } = useTranslation();
   return (
     <>
       {dropItems?.map((drop) => (
@@ -17,7 +19,7 @@ const Drop = () => {
                   <path fill="currentColor" d={drop.svgD} />
                 </svg>
               </div>
-              <p className="text-white">{drop.content}</p>
+              <p className="text-white">{t(drop.content)}</p>
             </div>
           </div>
         </div>
