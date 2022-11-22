@@ -5,11 +5,11 @@ import Heading from "../Heading";
 import Drop from "./Drop";
 import dropItems from "./DropItems";
 
-const About = () => {
+const About = ({ innerRef }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="h-full flex flex-col justify-center py-20">
+    <div className="h-full flex flex-col justify-center py-20" ref={innerRef}>
       <Heading size="h1" className="mb-8">
         {t("welcome")}
       </Heading>

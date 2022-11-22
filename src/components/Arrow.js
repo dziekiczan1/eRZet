@@ -1,10 +1,13 @@
 import React from "react";
 
-const Arrow = ({ color }) => {
+const Arrow = ({ color, props }) => {
   return (
     <>
       <div className="absolute w-[34px] top-[34px] border-b-2 border-orange-100 mt-2"></div>
-      <div className="text-center bounce absolute">
+      <div
+        className="text-center bounce absolute cursor-pointer"
+        onClick={props}
+      >
         <svg width="36px" height="36px" viewBox="0 0 24 24">
           <path
             fill={color}
