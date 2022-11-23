@@ -9,7 +9,10 @@ const About = ({ innerRef }) => {
   const { t } = useTranslation();
 
   return (
-    <div className="h-full flex flex-col justify-center py-20" ref={innerRef}>
+    <div
+      className="h-full flex flex-col justify-center py-20 z-20"
+      ref={innerRef}
+    >
       <Heading size="h1" className="mb-8">
         {t("welcome")}
       </Heading>
