@@ -10,6 +10,9 @@ const resources = {
       portfolio: "Portfolio",
       pricelist: "Price List",
       contact: "Contact",
+      punctuality: "Punctuality",
+      modernity: "Modernity",
+      accuracy: "Accuracy",
     },
   },
   pl: {
@@ -20,6 +23,9 @@ const resources = {
       portfolio: "Realizacje",
       pricelist: "Cennik",
       contact: "Kontakt",
+      punctuality: "Punktualność",
+      modernity: "Nowoczesność",
+      accuracy: "Dokładność",
     },
   },
 };
