@@ -5,7 +5,7 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="w-1/2 flex justify-start gap-4 z-20">
+    <div className="w-1/2 flex justify-start gap-2 z-20">
       <div
         className="cursor-pointer"
         onClick={() => {

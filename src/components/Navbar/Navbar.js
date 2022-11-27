@@ -6,10 +6,20 @@ import logo from "../../assets/logo.png";
 import goldRec from "../../assets/goldrec.png";
 import azureRec from "../../assets/azurerec.png";
 import azureCircle from "../../assets/azurecircle.png";
+import React from "react";
 
 const Navbar = () => {
   return (
-    <nav className="flex flex-col items-center py-8 relative">
+    <nav className="flex flex-col items-center relative">
+      <div className="flex justify-center bg-black w-full mb-8">
+        <div className="flex justify-between w-3/4 text-xs text-white font-bold py-4">
+          <div className="flex flex-row gap-4 items-center">
+            <p className="whitespace-nowrap">Wybierz język:</p>{" "}
+            <LanguageSwitcher />
+          </div>
+          <div>Zmień tryb:</div>
+        </div>
+      </div>
       <div className="flex justify-center relative w-1/2 mb-8 select-none">
         <img src={logo} alt="eRZet" className="z-50" />
         {/* <img
