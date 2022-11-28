@@ -35,7 +35,7 @@ const Navbar = () => {
         /> */}
         <img
           src={azureCircle}
-          className="h-[247px] absolute -top-[0em] rotate-[20deg] -right-[5em] z-10 opacity-25"
+          className="w-1/2 absolute -bottom-[12em] rotate-[-90deg] opacity-25"
           alt=""
         />
       </div>
