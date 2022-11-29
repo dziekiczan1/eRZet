@@ -5,7 +5,7 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="w-1/2 flex justify-start gap-2 z-20">
+    <div className="flex justify-start items-center gap-2 z-20">
       <div
         className="cursor-pointer"
         onClick={() => {
@@ -16,7 +16,7 @@ const LanguageSwitcher = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 16 10"
           width="24"
-          height="14"
+          height="16"
         >
           <path fill="#fff" d="M0 0h16v10H0z" />
           <path fill="#dc143c" d="M0 5h16v5H0z" />
@@ -40,7 +40,7 @@ const LanguageSwitcher = () => {
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 60 30"
           width="24"
-          height="14"
+          height="16"
         >
           <clipPath id="a">
             <path d="M0 0v30h60V0z" />

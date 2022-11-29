@@ -11,13 +11,14 @@ import React from "react";
 const Navbar = () => {
   return (
     <nav className="flex flex-col items-center relative">
-      <div className="flex justify-center bg-black w-full mb-8">
+      <div className="flex justify-center w-full mb-8">
         <div className="flex justify-between w-3/4 text-xs text-white font-bold py-4">
-          <div className="flex flex-row gap-4 items-center">
-            <p className="whitespace-nowrap">Wybierz język:</p>{" "}
+          <div className="flex flex-row gap-4 py-6 px-4 items-center rounded-threeRd shadow-fiveSh">
             <LanguageSwitcher />
           </div>
-          <div>Zmień tryb:</div>
+          <div className="flex flex-row gap-4 py-6 px-4 items-center rounded-threeRd shadow-fourSh">
+            Zmień tryb:
+          </div>
         </div>
       </div>
       <div className="flex justify-center relative w-1/2 mb-8 select-none">
@@ -35,7 +36,7 @@ const Navbar = () => {
         /> */}
         <img
           src={azureCircle}
-          className="w-1/2 absolute -bottom-[12em] rotate-[-90deg] opacity-25"
+          className="w-[180px] absolute rotate-[-90deg] opacity-25"
           alt=""
         />
       </div>
