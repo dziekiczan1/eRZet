@@ -1,3 +1,6 @@
+import React from "react";
+
+import Toggle from "../Toggle";
 import MainMenu from "../Navbar/MainMenu";
 import menuItems from "../Navbar/MenuItems";
 import LanguageSwitcher from "../Navbar/LanguageSwitcher";
@@ -6,18 +9,17 @@ import logo from "../../assets/logo.png";
 import goldRec from "../../assets/goldrec.png";
 import azureRec from "../../assets/azurerec.png";
 import azureCircle from "../../assets/azurecircle.png";
-import React from "react";
 
 const Navbar = () => {
   return (
     <nav className="flex flex-col items-center relative">
       <div className="flex justify-center w-full mb-8">
         <div className="flex justify-between w-3/4 text-xs text-white font-bold py-4">
-          <div className="flex flex-row gap-4 py-6 px-4 items-center rounded-threeRd shadow-fiveSh">
+          <div className="flex flex-row gap-4 py-6 px-4 2xl:px-8 items-center rounded-threeRd shadow-fiveSh">
             <LanguageSwitcher />
           </div>
-          <div className="flex flex-row gap-4 py-6 px-4 items-center rounded-threeRd shadow-fourSh">
-            Zmień tryb:
+          <div className="flex flex-row gap-4 py-6 px-4 2xl:px-8 items-center rounded-threeRd shadow-fourSh">
+            <Toggle />
           </div>
         </div>
       </div>
