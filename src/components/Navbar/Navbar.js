@@ -15,10 +15,10 @@ const Navbar = () => {
     <nav className="flex flex-col items-center relative">
       <div className="flex justify-center w-full mb-8">
         <div className="flex justify-between w-3/4 text-xs text-white font-bold py-4">
-          <div className="flex flex-row gap-4 py-6 px-4 2xl:px-8 items-center rounded-threeRd shadow-fiveSh">
+          <div className="flex flex-row gap-4 py-2 px-6 items-center rounded-base shadow-oneSh">
             <LanguageSwitcher />
           </div>
-          <div className="flex flex-row gap-4 py-6 px-4 2xl:px-8 items-center rounded-threeRd shadow-fourSh">
+          <div className="flex flex-row gap-4 py-2 px-6 items-center rounded-base shadow-oneSh">
             <Toggle />
           </div>
         </div>
