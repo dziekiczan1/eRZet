@@ -1,11 +1,16 @@
-import React, { useRef } from "react";
+import React, { useRef, useContext } from "react";
 import { useTranslation } from "react-i18next";
+import { ThemeContext } from "./Theme";
+
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Arrow from "./components/Arrow";
 
 const App = () => {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
+
+  console.log(theme);
 
   const myRef = useRef(null);
   const executeScroll = () =>
@@ -25,6 +30,7 @@ const App = () => {
         <div className="bg-navy-500 w-full">
           <About innerRef={myRef} />
         </div>
+        {theme === "dark" ? "moj theme jest czorny" : "moj theme jest biały"}
       </main>
       <footer>
         <p>Footer</p>
