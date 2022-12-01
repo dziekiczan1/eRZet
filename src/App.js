@@ -10,8 +10,6 @@ const App = () => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
 
-  console.log(theme);
-
   const myRef = useRef(null);
   const executeScroll = () =>
     myRef.current.scrollIntoView({
@@ -27,10 +25,11 @@ const App = () => {
       <main className="relative flex justify-center">
         <div className="indicator absolute -top-[60px]"></div>
         <Arrow color={"#0adab9"} props={executeScroll} />
-        <div className="bg-navy-500 w-full">
+        <div
+          className={theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-200"}
+        >
           <About innerRef={myRef} />
         </div>
-        {theme === "dark" ? "moj theme jest czorny" : "moj theme jest biały"}
       </main>
       <footer>
         <p>Footer</p>

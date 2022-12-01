@@ -32,6 +32,8 @@ module.exports = {
         threeRd: "35% 65% 31% 69% / 57% 59% 41% 43%",
       },
       boxShadow: {
+        baseSh:
+          "inset 20px 20px 20px rgba(0, 0, 0, 0.05), inset -10px -10px 25px rgba(255, 255, 255, 0.2)",
         oneSh:
           "inset 20px 20px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), 25px 35px 20px rgba(0, 0, 0, 0.05), inset -10px -10px 25px rgba(255, 255, 255, 0.2)",
         twoSh:
