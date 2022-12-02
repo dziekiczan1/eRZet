@@ -12,6 +12,7 @@ module.exports = {
           900: "#07080c",
         },
         azure: {
+          50: "#097a68",
           100: "#0adab9",
         },
         orange: {

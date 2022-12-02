@@ -5,9 +5,9 @@ const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
 
   return (
-    <div className="flex justify-start items-center gap-2 z-20">
+    <div className="flex justify-start items-center gap-2 z-20 cursor-pointer">
       <div
-        className="cursor-pointer"
+        className={i18n.language === "pl" ? "order-1" : "order-3"}
         onClick={() => {
           i18n.changeLanguage("pl");
         }}
@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
           <path fill="#dc143c" d="M0 5h16v5H0z" />
         </svg>
       </div>
-      <div className="cursor-pointer">
+      <div className="order-2 cursor-default">
         <svg width="16" height="16" viewBox="0 0 24 24">
           <path
             fill="#0adab9"
@@ -31,7 +31,7 @@ const LanguageSwitcher = () => {
         </svg>
       </div>
       <div
-        className="cursor-pointer"
+        className={i18n.language === "en" ? "order-1" : "order-3"}
         onClick={() => {
           i18n.changeLanguage("en");
         }}

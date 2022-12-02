@@ -26,7 +26,9 @@ const App = () => {
         <div className="indicator absolute -top-[60px]"></div>
         <Arrow color={"#0adab9"} props={executeScroll} />
         <div
-          className={theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-200"}
+          className={
+            theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-200 w-full"
+          }
         >
           <About innerRef={myRef} />
         </div>
