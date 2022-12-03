@@ -6,7 +6,7 @@ function Heading({ className, size, children }) {
   const Tag = size;
 
   const styles = {
-    base: "font-bold text-white text-center",
+    base: "font-bold text-white",
     h1: "text-2xl md:text-3xl",
     h2: "text-xl md:text-2xl",
     h3: "text-lg md:text-xl",

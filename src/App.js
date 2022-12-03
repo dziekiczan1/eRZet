@@ -5,6 +5,7 @@ import { ThemeContext } from "./Theme";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Arrow from "./components/Arrow";
+import Footer from "./components/Footer";
 
 const App = () => {
   const { t } = useTranslation();
@@ -34,7 +35,7 @@ const App = () => {
         </div>
       </main>
       <footer>
-        <p>Footer</p>
+        <Footer />
       </footer>
     </>
   );
