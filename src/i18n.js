@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      erzet: "eRZet - Piotr Rzadkowolski",
       welcome: "Welcome on company site eRZet - Piotr Rzadkowolski",
       home: "Home Page",
       about: "About Us",
@@ -17,6 +18,7 @@ const resources = {
   },
   pl: {
     translation: {
+      erzet: "eRZet - Piotr Rzadkowolski",
       welcome: "Witaj na stronie firmy eRZet - Piotr Rzadkowolski",
       home: "Strona Główna",
       about: "O nas",
@@ -32,6 +34,7 @@ const resources = {
         "Nasza firma zawsze dostosowuje swoje produkty i usługi do najnowszych trendów oraz technologii dostępnej na rynku, dzięki czemu możemy dostarczyć naszym klientom najlepsze rozwiązania, aby sprostać ich oczekiwaniom.",
       accuracyContent:
         "Przykładamy wagę do najdrobniejszych szczegółów, dzięki czemu nasze realizacje zawsze stoją na najwyższym możliwym poziomie. Do każdego klienta podchodzimy indywidualnie, co przekłada się na najlepszą jakość oferowanych usług.",
+      socialMedia: "Social Media",
     },
   },
 };
