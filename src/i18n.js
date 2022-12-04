@@ -23,9 +23,15 @@ const resources = {
       portfolio: "Realizacje",
       pricelist: "Cennik",
       contact: "Kontakt",
-      punctuality: "Punktualność",
+      punctuality: "Terminowość",
       modernity: "Nowoczesność",
       accuracy: "Dokładność",
+      punctualityContent:
+        "To jedna z naszych najważniejszych cech, którą możemy się poszczycić. Szanujemy czas naszych klientów, dlatego zawsze zapewniamy sprawne oraz terminowe wykonanie zleconych usług z zachowaniem najwyższych standardów.",
+      modernityContent:
+        "Nasza firma zawsze dostosowuje swoje produkty i usługi do najnowszych trendów oraz technologii dostępnej na rynku, dzięki czemu możemy dostarczyć naszym klientom najlepsze rozwiązania, aby sprostać ich oczekiwaniom.",
+      accuracyContent:
+        "Przykładamy wagę do najdrobniejszych szczegółów, dzięki czemu nasze realizacje zawsze stoją na najwyższym możliwym poziomie. Do każdego klienta podchodzimy indywidualnie, co przekłada się na najlepszą jakość oferowanych usług.",
     },
   },
 };
