@@ -28,10 +28,12 @@ const Drop = () => {
                 </svg>
               </div>
               <div>
-                <Heading size="h3" className="mb-4">
+                <Heading size="h3" className="mb-2">
                   {t(drop.title)}
                 </Heading>
-                <p className="text-white text-sm px-6">{t(drop.content)}</p>
+                <p className="text-white text-center text-sm px-6">
+                  {t(drop.content)}
+                </p>
               </div>
             </div>
           </div>

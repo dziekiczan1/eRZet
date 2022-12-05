@@ -1,30 +1,47 @@
+// @ts-nocheck
 import React from "react";
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import azureCircle from "../assets/azurecircle.png";
+import { textVariant, staggerContainer } from "../utils/motion";
 
 import Heading from "./Heading";
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-row w-full bg-navy-800 py-12 px-8">
-      <div className="w-1/2">
-        <Heading size="h2" className="mb-8">
-          {t("erzet")}
-        </Heading>
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+      className="flex flex-row w-full bg-navy-800 py-12 px-8"
+    >
+      <div className="flex flex-col w-1/2">
         <div className="w-full flex flex-row gap-8">
-          <address className="w-1/2 text-white not-italic">
-            <p>ul. Prowiantowa, nr 15, lok. 49</p>
-            <p>15-707 Białystok</p>
-            <p>NIP: 8513120222</p>
-            <p>REGON: 523299221</p>
-          </address>
+          <div className="flex flex-col w-1/2">
+            <motion.img
+              variants={textVariant(0.2)}
+              src={logo}
+              alt="eRZet"
+              className="z-10 w-3/4 mb-4"
+            />
+            <Heading size="h2" className="mb-4">
+              {t("erzet")}
+            </Heading>
+            <address className="w-full text-white not-italic">
+              <p>ul. Prowiantowa, nr 15, lok. 49</p>
+              <p>15-707 Białystok</p>
+              <p>NIP: 8513120222</p>
+              <p>REGON: 523299221</p>
+            </address>
+          </div>
           <div className="w-1/2">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.6922176289754!2d23.12483401588338!3d53.133670398320895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc73f5083fb5%3A0xf094a0bc90dd9ff8!2sProwiantowa%2C%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1670157302884!5m2!1spl!2spl"
-              width="250"
-              height="200"
+              width="400"
+              height="250"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
@@ -89,7 +106,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
