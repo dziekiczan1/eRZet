@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <>
-      <header>
+      <header className={theme === "dark" ? "bg-navy-700" : "bg-light-100"}>
         <Navbar />
       </header>
       <main className="relative flex justify-center">
@@ -28,7 +28,7 @@ const App = () => {
         <Arrow color={"#0adab9"} props={executeScroll} />
         <div
           className={
-            theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-200 w-full"
+            theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-300 w-full"
           }
         >
           <About innerRef={myRef} />

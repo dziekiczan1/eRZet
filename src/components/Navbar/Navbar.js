@@ -1,6 +1,7 @@
 // @ts-nocheck
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
+import { ThemeContext } from "../../Theme";
 
 import {
   slideIn,
@@ -14,10 +15,12 @@ import menuItems from "../Navbar/MenuItems";
 import LanguageSwitcher from "../Navbar/LanguageSwitcher";
 
 import logo from "../../assets/logo.png";
+import logoDark from "../../assets/logo_dark.png";
 import goldRec from "../../assets/goldrec.png";
 import azureRec from "../../assets/azurerec.png";
 
 const Navbar = () => {
+  const { theme } = useContext(ThemeContext);
   return (
     <motion.nav
       variants={staggerContainer}
@@ -55,7 +58,7 @@ const Navbar = () => {
       <div className="flex justify-center relative w-1/2 mb-8 select-none">
         <motion.img
           variants={textVariant(0.5)}
-          src={logo}
+          src={theme === "dark" ? logo : logoDark}
           alt="eRZet"
           className="z-50"
         />
