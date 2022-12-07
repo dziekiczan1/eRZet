@@ -24,11 +24,17 @@ const App = () => {
         <Navbar />
       </header>
       <main className="relative flex justify-center">
-        <div className="indicator absolute -top-[60px]"></div>
+        <div
+          className={
+            theme === "dark"
+              ? "indicator bg-navy-700 border-[6px] border-navy-700 after:shadow-indicator before:shadow-indicator absolute -top-[60px]"
+              : "indicator bg-light-100 border-[6px] border-light-100 after:shadow-indicatorLight before:shadow-indicatorLight absolute -top-[60px]"
+          }
+        ></div>
         <Arrow color={"#0adab9"} props={executeScroll} />
         <div
           className={
-            theme === "dark" ? "bg-navy-500 w-full" : "bg-gray-300 w-full"
+            theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
           }
         >
           <About innerRef={myRef} />
