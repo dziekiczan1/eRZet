@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import { ThemeContext } from "../../Theme";
 
 const MainMenu = ({ menuItems }) => {
   const [active, setActive] = useState("0");
   const [isHovered, setIsHovered] = useState(false);
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
 
   return (
-    <ul className="flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer my-16">
+    <ul
+      className={
+        theme === "dark"
+          ? "flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer my-16"
+          : "flex flex-row w-3/4 text-black z-50 gap-8 cursor-pointer my-16"
+      }
+    >
       {menuItems?.map((item) => (
         <li
           key={item.id}
