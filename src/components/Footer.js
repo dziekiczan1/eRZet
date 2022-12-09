@@ -1,14 +1,16 @@
 // @ts-nocheck
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import { textVariant, staggerContainer } from "../utils/motion";
 
 import Heading from "./Heading";
 import logo from "../assets/logo.png";
+import { ThemeContext } from "../Theme";
 
 const Footer = () => {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
 
   return (
     <motion.div
@@ -16,7 +18,11 @@ const Footer = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
-      className="flex flex-row w-full bg-navy-800 py-12 px-8"
+      className={
+        theme === "dark"
+          ? "flex flex-row w-full bg-navy-800 py-12 px-8"
+          : "flex flex-row w-full bg-light-100 py-12 px-8"
+      }
     >
       <div className="flex flex-col w-1/2">
         <div className="w-full flex flex-row gap-8">
