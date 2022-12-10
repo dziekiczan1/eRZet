@@ -6,6 +6,7 @@ import { textVariant, staggerContainer } from "../utils/motion";
 
 import Heading from "./Heading";
 import logo from "../assets/logo.png";
+import logoDark from "../assets/logo_dark.png";
 import { ThemeContext } from "../Theme";
 
 const Footer = () => {
@@ -29,14 +30,25 @@ const Footer = () => {
           <div className="flex flex-col w-1/2">
             <motion.img
               variants={textVariant(0.2)}
-              src={logo}
+              src={theme === "dark" ? logo : logoDark}
               alt="eRZet"
               className="z-10 w-3/4 mb-4"
             />
-            <Heading size="h2" className="mb-4">
+            <Heading
+              size="h2"
+              className={
+                theme === "dark" ? "mb-4 text-white" : "mb-4 text-black"
+              }
+            >
               {t("erzet")}
             </Heading>
-            <address className="w-full text-white not-italic">
+            <address
+              className={
+                theme === "dark"
+                  ? "w-full text-white not-italic"
+                  : "w-full text-black not-italic"
+              }
+            >
               <p>ul. Prowiantowa, nr 15, lok. 49</p>
               <p>15-707 Białystok</p>
               <p>NIP: 8513120222</p>
