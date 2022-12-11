@@ -1,11 +1,11 @@
 import React, { useRef, useContext } from "react";
 import { useTranslation } from "react-i18next";
-import { ThemeContext } from "./Theme";
 
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Arrow from "./components/Arrow";
 import Footer from "./components/Footer";
+import { ThemeContext } from "./Theme";
 
 const App = () => {
   const { t } = useTranslation();
