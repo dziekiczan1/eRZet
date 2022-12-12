@@ -1,16 +1,17 @@
 // @ts-nocheck
-import React from "react";
+import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import Heading from "../Heading";
 import Drop from "./Drop";
 import dropItems from "./DropItems";
-import desktop from "../../assets/desktop.png";
 import { staggerContainer } from "../../utils/motion";
+import { ThemeContext } from "../../Theme";
 
 const About = ({ innerRef }) => {
   const { t } = useTranslation();
+  const { theme } = useContext(ThemeContext);
 
   return (
     <motion.div
@@ -21,10 +22,17 @@ const About = ({ innerRef }) => {
       className="h-full flex flex-col justify-center py-20 z-20"
       ref={innerRef}
     >
-      <Heading size="h1" className="mb-2">
+      <Heading
+        size="h1"
+        className={
+          theme === "dark"
+            ? "text-white mx-auto my-8"
+            : "text-slate-600 mx-auto my-8"
+        }
+      >
         {t("welcome")}
+        <div class="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div class="w-16 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       {/* <div className="relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
