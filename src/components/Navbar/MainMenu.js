@@ -38,13 +38,26 @@ const MainMenu = ({ menuItems }) => {
             <path
               fill={
                 isHovered === item.id && item.id !== active
-                  ? "#097a68"
+                  ? "#4a8787"
                   : `${active === item.id ? "#feb106" : "#4B5563"}`
               }
               d={item.svgD}
             />
           </svg>
-          <a href="#">{t(item.name)}</a>
+          <a
+            href="#"
+            className={
+              isHovered === item.id && item.id !== active && theme === "light"
+                ? "text-[#4a8787]"
+                : `${
+                    active === item.id && theme === "light"
+                      ? "text-orange-100"
+                      : "#4B5563"
+                  }`
+            }
+          >
+            {t(item.name)}
+          </a>
         </li>
       ))}
     </ul>
