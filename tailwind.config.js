@@ -34,6 +34,7 @@ module.exports = {
         oneRd: "47% 53% 70% 45% / 30% 43% 57% 70%",
         twoRd: "64% 27% 59% 41% / 57% 59% 41% 43%",
         threeRd: "35% 65% 31% 69% / 57% 59% 41% 43%",
+        topRight: "-0.5rem",
       },
       boxShadow: {
         indicator: "0px -10px 0 0 #1a1f2c",
