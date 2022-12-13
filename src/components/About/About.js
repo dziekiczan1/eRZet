@@ -19,7 +19,7 @@ const About = ({ innerRef }) => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: false, amount: 0.3 }}
       className="h-full flex flex-col justify-center py-20 z-20"
       ref={innerRef}
     >

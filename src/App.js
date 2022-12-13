@@ -6,6 +6,8 @@ import About from "./components/About/About";
 import Arrow from "./components/Arrow";
 import Footer from "./components/Footer";
 import { ThemeContext } from "./Theme";
+import Portfolio from "./components/Portfolio/Portfolio";
+import Pricing from "./components/Pricing";
 
 const App = () => {
   const { t } = useTranslation();
@@ -32,12 +34,28 @@ const App = () => {
           }
         ></div>
         <Arrow color={"#0adab9"} props={executeScroll} />
-        <div
-          className={
-            theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
-          }
-        >
-          <About innerRef={myRef} />
+        <div className="flex flex-col">
+          <div
+            className={
+              theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
+            }
+          >
+            <About innerRef={myRef} />
+          </div>
+          <div
+            className={
+              theme === "dark" ? "bg-navy-700 w-full" : "bg-light-100 w-full"
+            }
+          >
+            <Portfolio />
+          </div>
+          <div
+            className={
+              theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
+            }
+          >
+            <Pricing />
+          </div>
         </div>
       </main>
       <footer>
