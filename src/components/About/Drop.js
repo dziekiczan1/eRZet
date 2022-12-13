@@ -15,7 +15,7 @@ const Drop = () => {
     <>
       {dropItems?.map((drop) => (
         <motion.div
-          variants={zoomIn(0.2, 0.6)}
+          variants={zoomIn(0.6, 0.6)}
           key={drop.id}
           className="w-auto flex justify-center items-center"
         >

@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Heading from "../Heading";
 import Drop from "./Drop";
 import dropItems from "./DropItems";
-import { staggerContainer, zoomIn } from "../../utils/motion";
+import { staggerContainer, zoomIn, slideIn } from "../../utils/motion";
 import { ThemeContext } from "../../Theme";
 import aboutLogo from "../../assets/about-logo.svg";
 
@@ -34,17 +34,47 @@ const About = ({ innerRef }) => {
         {t("welcome")}
         <div class="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="flex flex-row w-full mb-6">
-        <div className="w-1/2 ml-4 px-8 pt-8 rounded-tr-[1.5rem] rounded-bl-[1.5rem] rounded-br-xl border-b-4 border-[#b9afaf] border-r-4 border-[#b9afaf]">
+      <div className="flex flex-row w-full">
+        <div className="w-1/2 ml-4 px-8 pt-8">
           <motion.img
-            variants={zoomIn(0.4, 1)}
+            variants={zoomIn(0.2, 0.6)}
             src={aboutLogo}
             alt="eRZet - About us"
             className=""
           />
         </div>
-        <div className="w-1/2"></div>
+        <motion.div
+          variants={slideIn("right", "tween", 0, 0.3)}
+          className="flex flex-col font-semibold justify-center items-center w-1/2 mr-4 px-8 pt-8 text-justify"
+        >
+          <p
+            className={
+              theme === "dark" ? "text-white mb-8" : "text-slate-600 mb-8"
+            }
+          >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+            scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc,
+            eget sagittis eros efficitur eget. In interdum, nisi nec volutpat
+            tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel
+            ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc
+            malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu
+            sed lacus blandit aliquam. Nunc rutrum tristique sapien sit amet
+            dictum. Pellentesque sed pharetra arcu, at pharetra purus. Phasellus
+            convallis mi ipsum, nec vehicula eros vestibulum a. Nunc scelerisque
+            diam at tortor facilisis volutpat sed non turpis. Pellentesque at
+            elit lobortis, imperdiet lacus eu, molestie massa. Class aptent
+            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+            himenaeos. Sed auctor dictum est at consequat. Aliquam eu ipsum
+            tortor. Phasellus enim est, gravida vitae tincidunt sed, faucibus
+            sed dolor. Duis odio velit, varius et posuere vitae, pellentesque
+            condimentum sem.
+          </p>
+          <button className="bg-navy-700 p-4 text-white text-bold">
+            Napisz do nas!
+          </button>
+        </motion.div>
       </div>
+      <div class="h-2 bg-gradient-to-r from-[#475569] to-transparent mb-12"></div>
       <div className="mx-auto w-3/4 flex flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20">
         <Drop dropItems={dropItems} />
       </div>
