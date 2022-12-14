@@ -2,7 +2,7 @@
 import React, { useContext } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { textVariant, staggerContainer } from "../utils/motion";
+import { textVariant, staggerContainer, slideIn } from "../utils/motion";
 
 import Heading from "./Heading";
 import { ThemeContext } from "../Theme";
@@ -61,7 +61,10 @@ const Footer = () => {
               <p>REGON: 523299221</p>
             </address>
           </div>
-          <div className="w-1/2">
+          <motion.div
+            className="w-1/2 overflow-hidden"
+            variants={slideIn("right", "tween", 0, 0.6)}
+          >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2393.6922176289754!2d23.12483401588338!3d53.133670398320895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ffc73f5083fb5%3A0xf094a0bc90dd9ff8!2sProwiantowa%2C%20Bia%C5%82ystok!5e0!3m2!1spl!2spl!4v1670157302884!5m2!1spl!2spl"
               width="400"
@@ -69,7 +72,7 @@ const Footer = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-          </div>
+          </motion.div>
         </div>
       </div>
       <div className="border-l border-orange-100/20 mx-16"></div>
@@ -82,24 +85,20 @@ const Footer = () => {
             {t("contactUs")}
             <div class="w-[15rem] h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
           </Heading>
-          <div className="flex flex-row items-center gap-4 mb-4">
-            <motion.img
-              variants={textVariant(0.2)}
-              src={iconPhone}
-              alt="eRZet Phone Number"
-              width={30}
-            />
+          <motion.div
+            className="flex flex-row items-center gap-4 mb-4"
+            variants={textVariant(0.2)}
+          >
+            <img src={iconPhone} alt="eRZet Phone Number" width={30} />
             <p className="text-xl">505 - 933 - 394</p>
-          </div>
-          <div className="flex flex-row items-center gap-4 ">
-            <motion.img
-              variants={textVariant(0.2)}
-              src={iconEmail}
-              alt="eRZet Email address"
-              width={30}
-            />
+          </motion.div>
+          <motion.div
+            className="flex flex-row items-center gap-4 "
+            variants={textVariant(0.2)}
+          >
+            <img src={iconEmail} alt="eRZet Email address" width={30} />
             <p className="text-xl">p.rzadkowolski@gmail.com</p>
-          </div>
+          </motion.div>
         </div>
         <div className="flex flex-col">
           <Heading
