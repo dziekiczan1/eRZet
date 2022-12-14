@@ -19,7 +19,7 @@ const About = ({ innerRef }) => {
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.3 }}
+      viewport={{ once: false, amount: 0.4 }}
       className="h-full flex flex-col justify-center py-20 z-20"
       ref={innerRef}
     >
@@ -34,14 +34,17 @@ const About = ({ innerRef }) => {
         {t("welcome")}
         <div class="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="flex flex-row w-full">
-        <div className="w-1/2 ml-4 px-8 pt-8">
-          <motion.img
-            variants={zoomIn(0.2, 0.6)}
-            src={aboutLogo}
-            alt="eRZet - About us"
-            className=""
-          />
+      <div className="flex flex-row w-full mb-12">
+        <div className="flex justify-center w-1/2 ml-4 px-8 pt-8">
+          <div className="bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569] px-4">
+            <motion.img
+              variants={zoomIn(0.4, 0.6)}
+              src={aboutLogo}
+              alt="eRZet - About us"
+              width={600}
+              className="relative"
+            />
+          </div>
         </div>
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
@@ -74,7 +77,6 @@ const About = ({ innerRef }) => {
           </button>
         </motion.div>
       </div>
-      <div class="h-2 bg-gradient-to-r from-[#475569] to-transparent mb-12"></div>
       <div className="mx-auto w-3/4 flex flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20">
         <Drop dropItems={dropItems} />
       </div>
