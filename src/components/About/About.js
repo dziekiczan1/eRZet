@@ -9,6 +9,7 @@ import dropItems from "./DropItems";
 import { staggerContainer, zoomIn, slideIn } from "../../utils/motion";
 import { ThemeContext } from "../../Theme";
 import aboutLogo from "../../assets/about-logo.svg";
+import aboutLogoLight from "../../assets/about-logo-light.svg";
 
 const About = ({ innerRef }) => {
   const { t } = useTranslation();
@@ -36,10 +37,16 @@ const About = ({ innerRef }) => {
       </Heading>
       <div className="flex flex-row w-full mb-12">
         <div className="flex justify-center w-1/2 ml-4 px-8 pt-8">
-          <div className="bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569] px-4">
+          <div
+            className={
+              theme === "dark"
+                ? "bg-gradient-to-t from-navy-400 to-transparent rounded-xl border-b-4 border-b-[#949799] px-4"
+                : "bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569] px-4"
+            }
+          >
             <motion.img
               variants={zoomIn(0.4, 0.6)}
-              src={aboutLogo}
+              src={theme === "dark" ? aboutLogo : aboutLogoLight}
               alt="eRZet - About us"
               width={600}
               className="relative"

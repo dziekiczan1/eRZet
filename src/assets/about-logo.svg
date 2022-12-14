@@ -3,15 +3,15 @@
 <svg version="1.1" id="Icon_Set" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 64 61" style="enable-background:new 0 0 64 64;" xml:space="preserve">
 <style type="text/css">
-	.st0{fill:none;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st1{fill:#FFB300;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st2{fill:#90CAF9;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st3{fill:#FFFFFF;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st4{fill:#FF7043;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{fill:#9CCC65;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st6{fill:#37474F;}
-	.st7{fill:#37474F;stroke:#37474F;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st8{fill:none;stroke:#37474F;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st0{fill:none;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st1{fill:#eda607;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:#36415c;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#edf2f8;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:#FF7043;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st5{fill:#9CCC65;stroke:##949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:#949799;}
+	.st7{fill:#37474F;stroke:#949799;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#949799;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:10;}
 </style>
 <g id="Digital_Man">
 	<g>
@@ -29,7 +29,7 @@
 			<line class="st0" x1="48.5" y1="23" x2="48.5" y2="16"/>
 			<circle class="st3" cx="58.5" cy="17" r="2"/>
 			<line class="st0" x1="58.5" y1="3" x2="58.5" y2="15"/>
-			<polyline class="st0" points="53.5,23 53.5,12 48.5,7 			"/>
+			<polyline class="st0" points="53.5,23 53.5,12 48.5,7"/>
 			<circle class="st3" cx="48.5" cy="7" r="2"/>
 		</g>
 		<g>
