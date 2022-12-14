@@ -14,6 +14,7 @@ const resources = {
       punctuality: "Punctuality",
       modernity: "Modernity",
       accuracy: "Accuracy",
+      contactUs: "Contact Us!",
     },
   },
   pl: {
@@ -34,7 +35,8 @@ const resources = {
         "Nasza firma zawsze dostosowuje swoje produkty i usługi do najnowszych trendów oraz technologii dostępnej na rynku, dzięki czemu możemy dostarczyć naszym klientom najlepsze rozwiązania, aby sprostać ich oczekiwaniom.",
       accuracyContent:
         "Przykładamy wagę do najdrobniejszych szczegółów, dzięki czemu nasze realizacje zawsze stoją na najwyższym możliwym poziomie. Do każdego klienta podchodzimy indywidualnie, co przekłada się na najlepszą jakość oferowanych usług.",
-      socialMedia: "Social Media",
+      socialMedia: "Media społecznościowe",
+      contactUs: "Skontaktuj się z nami!",
     },
   },
 };

@@ -48,7 +48,7 @@ const About = ({ innerRef }) => {
         </div>
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
-          className="flex flex-col font-semibold text-xl justify-center items-center w-1/2 mr-4 px-20 pt-8 text-justify"
+          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-1/2 mr-4 px-20 pt-8 text-justify"
         >
           <p
             className={
