@@ -36,7 +36,7 @@ const Drop = () => {
               </div>
               <div>
                 <Heading
-                  size="h3"
+                  size="h2"
                   className={
                     theme === "dark" ? "text-white mb-2" : "text-black mb-2"
                   }
