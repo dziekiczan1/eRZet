@@ -40,7 +40,7 @@ const About = ({ innerRef }) => {
           <div
             className={
               theme === "dark"
-                ? "bg-gradient-to-t from-navy-400 to-transparent rounded-xl border-b-4 border-b-[#949799] px-4"
+                ? "bg-gradient-to-t from-navy-400 to-transparent rounded-xl border-b-4 border-b-[#bcbcbc] px-4"
                 : "bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569] px-4"
             }
           >
