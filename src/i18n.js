@@ -15,6 +15,7 @@ const resources = {
       modernity: "Modernity",
       accuracy: "Accuracy",
       contactUs: "Contact Us!",
+      values: "Our values",
     },
   },
   pl: {
@@ -37,6 +38,7 @@ const resources = {
         "Przykładamy wagę do najdrobniejszych szczegółów, dzięki czemu nasze realizacje zawsze stoją na najwyższym możliwym poziomie. Do każdego klienta podchodzimy indywidualnie, co przekłada się na najlepszą jakość oferowanych usług.",
       socialMedia: "Media społecznościowe",
       contactUs: "Skontaktuj się z nami!",
+      values: "Nasze wartości",
     },
   },
 };
