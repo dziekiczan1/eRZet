@@ -42,36 +42,41 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center py-10">
+    <div className="flex flex-col justify-center pt-10 pb-16">
       <Heading
         size="h1"
         className={
           theme === "dark"
-            ? "text-white mx-auto my-8"
-            : "text-slate-600 mx-auto my-8"
+            ? "text-white mx-auto mt-8 my-16"
+            : "text-slate-600 mx-auto mt-8 my-16"
         }
       >
         Nasze realizacje
         <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="mx-auto w-3/4 h-[400px] md:h-[500px] relative overflow-hidden">
+      <div className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mb-2">
         {PortfolioData.map((slide, index) => {
           return (
-            <div className="w-full overflow-hidden" key={index}>
+            <div className="w-full" key={index}>
               {index === current && (
                 <motion.div
-                  animate={{ opacity: [0, 1] }}
-                  transition={{ duration: 0.85, ease: "easeOut" }}
+                  animate={{ opacity: [0, 1], x: [100, 0] }}
+                  transition={{ duration: 0.45, ease: "easeOut" }}
                   className="flex justify-center"
                 >
-                  <Heading
-                    size="h1"
-                    className={
-                      theme === "dark" ? "text-white" : "text-slate-600"
-                    }
-                  >
-                    {slide.title}
-                  </Heading>
+                  <div className="flex justify-center min-h-[500px] w-full bg-navy-400/40 rounded-2xl">
+                    <Heading
+                      size="h2"
+                      className={
+                        theme === "dark" ? "text-white" : "text-slate-600"
+                      }
+                    >
+                      {slide.title}
+                    </Heading>
+                  </div>
+                  <div className="z-10 w-[400px] absolute -top-10 -left-10 rounded-xl overflow-hidden">
+                    <img src={slide.src} />
+                  </div>
                 </motion.div>
               )}
             </div>
@@ -90,7 +95,7 @@ const Portfolio = () => {
           >
             <path
               d="M7.20711 0.792891C7.59763 1.18342 7.59763 1.81658 7.20711 2.20711L2.91418 6.50001L7.20711 10.7929C7.59763 11.1834 7.59763 11.8166 7.20711 12.2071C6.81658 12.5976 6.1834 12.5976 5.79289 12.2071L0.792876 7.20711C0.402375 6.81661 0.402375 6.18341 0.792876 5.79291L5.79289 0.792891C6.1834 0.40237 6.81658 0.40237 7.20711 0.792891Z"
-              fill="#000000"
+              fill={theme === "dark" ? "#FFFFFF" : "#000000"}
             />
           </svg>
         </div>
@@ -107,7 +112,7 @@ const Portfolio = () => {
           >
             <path
               d="M0.792891 0.792891C0.40237 1.18342 0.40237 1.81658 0.792891 2.20711L5.08582 6.50001L0.792891 10.7929C0.40237 11.1834 0.40237 11.8166 0.792891 12.2071C1.18342 12.5976 1.8166 12.5976 2.20711 12.2071L7.20712 7.20711C7.59763 6.81661 7.59763 6.18341 7.20712 5.79291L2.20711 0.792891C1.8166 0.40237 1.18342 0.40237 0.792891 0.792891Z"
-              fill="#000000"
+              fill={theme === "dark" ? "#FFFFFF" : "#000000"}
             />
           </svg>
         </div>
