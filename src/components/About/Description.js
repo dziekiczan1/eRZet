@@ -50,7 +50,7 @@ const Description = () => {
         >
           <p
             className={
-              theme === "dark" ? "text-white mb-8" : "text-slate-600 mb-8"
+              theme === "dark" ? "text-white my-8" : "text-slate-600 my-8"
             }
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
@@ -59,16 +59,13 @@ const Description = () => {
             tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel
             ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc
             malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu
-            sed lacus blandit aliquam. Nunc rutrum tristique sapien sit amet
-            dictum. Pellentesque sed pharetra arcu, at pharetra purus. Phasellus
-            convallis mi ipsum, nec vehicula eros vestibulum a. Nunc scelerisque
-            diam at tortor facilisis volutpat sed non turpis. Pellentesque at
-            elit lobortis, imperdiet lacus eu, molestie massa. Class aptent
-            taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Sed auctor dictum est at consequat. Aliquam eu ipsum
-            tortor. Phasellus enim est, gravida vitae tincidunt sed, faucibus
-            sed dolor. Duis odio velit, varius et posuere vitae, pellentesque
-            condimentum sem.
+            sed lacus blandit aliquam. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Donec scelerisque nisl in interdum condimentum.
+            Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In
+            interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam,
+            nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus
+            luctus convallis. Nunc malesuada eros lobortis erat facilisis
+            sodales. Vivamus luctus arcu sed lacus blandit aliquam.
           </p>
           <button className="bg-navy-700 p-4 text-white text-bold">
             Napisz do nas!

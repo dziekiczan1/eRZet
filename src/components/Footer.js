@@ -120,9 +120,15 @@ const Footer = () => {
           </Heading>
           <motion.ul
             variants={textVariant(0.2)}
-            className="relative cursor-pointer list-none flex gap-8 text-[#475569]"
+            className="relative cursor-pointer list-none flex gap-8 text-light-500"
           >
-            <li className="transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2">
+            <li
+              className={
+                theme === "dark"
+                  ? "transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+                  : "transition ease-in-out delay-[50ms] hover:text-azure-50 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+              }
+            >
               <svg
                 strokeLinejoin="round"
                 viewBox="0 0 512 512"
@@ -137,7 +143,13 @@ const Footer = () => {
                 />
               </svg>
             </li>
-            <li className="transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2">
+            <li
+              className={
+                theme === "dark"
+                  ? "transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+                  : "transition ease-in-out delay-[50ms] hover:text-azure-50 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+              }
+            >
               <svg
                 strokeLinejoin="round"
                 viewBox="0 0 512 512"
@@ -152,7 +164,13 @@ const Footer = () => {
                 />
               </svg>
             </li>
-            <li className="transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2">
+            <li
+              className={
+                theme === "dark"
+                  ? "transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+                  : "transition ease-in-out delay-[50ms] hover:text-azure-50 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+              }
+            >
               <svg
                 strokeLinejoin="round"
                 viewBox="0 0 512 512"
@@ -167,7 +185,13 @@ const Footer = () => {
                 />
               </svg>
             </li>
-            <li className="transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2">
+            <li
+              className={
+                theme === "dark"
+                  ? "transition ease-in-out delay-[50ms] hover:text-slate-300 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+                  : "transition ease-in-out delay-[50ms] hover:text-azure-50 border-b-2 border-transparent hover:border-b-2 hover:border-orange-100 pb-2"
+              }
+            >
               <svg
                 strokeLinejoin="round"
                 viewBox="0 0 512 512"

@@ -64,7 +64,13 @@ const Portfolio = () => {
                   transition={{ duration: 0.45, ease: "easeOut" }}
                   className="flex justify-center"
                 >
-                  <div className="flex justify-center min-h-[500px] w-full bg-navy-400/40 rounded-2xl">
+                  <div
+                    className={
+                      theme === "dark"
+                        ? "flex justify-center min-h-[500px] w-full bg-navy-400/40 rounded-2xl"
+                        : "flex justify-center min-h-[500px] w-full bg-[#dfe3e8] rounded-2xl"
+                    }
+                  >
                     <Heading
                       size="h2"
                       className={
