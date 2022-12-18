@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
+import { slideIn, staggerContainer } from "../../utils/motion";
 import Heading from "../Heading";
 import { ThemeContext } from "../../Theme";
 import { PortfolioData } from "./PortfolioData";
@@ -42,7 +43,13 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center pt-10 pb-16">
+    <motion.div
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.5 }}
+      className="portfolio relative flex flex-col justify-center pt-10 pb-16"
+    >
       <Heading
         size="h1"
         className={
@@ -123,7 +130,7 @@ const Portfolio = () => {
           </svg>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
