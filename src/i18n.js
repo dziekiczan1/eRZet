@@ -14,6 +14,12 @@ const resources = {
       punctuality: "Punctuality",
       modernity: "Modernity",
       accuracy: "Accuracy",
+      punctualityContent:
+        "This is one of our most important features that we can be proud of. We respect the time of our clients, which is why we always ensure efficient and timely performance of the ordered services, maintaining the highest standards.",
+      modernityContent:
+        "Our company always adapts its products and services to the latest trends and technology available on the market, thanks to which we can provide our customers with the best solutions to meet their expectations.",
+      accuracyContent:
+        "We pay attention to the smallest details, thanks to which our projects are always at the highest possible level. We approach each client individually, which translates into the best quality of services offered.",
       contactUs: "Contact Us!",
       values: "Our values",
     },
