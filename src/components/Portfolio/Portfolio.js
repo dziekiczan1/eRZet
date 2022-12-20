@@ -58,7 +58,7 @@ const Portfolio = () => {
             : "text-slate-600 mx-auto mt-8 my-16"
         }
       >
-        Nasze realizacje
+        {t("portfolio")}
         <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
       <div className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mb-2">

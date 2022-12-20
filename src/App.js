@@ -7,7 +7,7 @@ import Arrow from "./components/Arrow";
 import Footer from "./components/Footer";
 import { ThemeContext } from "./Theme";
 import Portfolio from "./components/Portfolio/Portfolio";
-import Pricing from "./components/Pricing";
+import Pricing from "./components/Pricing/Pricing";
 
 const App = () => {
   const { t } = useTranslation();

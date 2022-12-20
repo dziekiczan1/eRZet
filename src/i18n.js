@@ -20,6 +20,7 @@ const resources = {
         "Our company always adapts its products and services to the latest trends and technology available on the market, thanks to which we can provide our customers with the best solutions to meet their expectations.",
       accuracyContent:
         "We pay attention to the smallest details, thanks to which our projects are always at the highest possible level. We approach each client individually, which translates into the best quality of services offered.",
+      socialMedia: "Social Media",
       contactUs: "Contact Us!",
       values: "Our values",
     },
