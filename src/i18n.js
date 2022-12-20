@@ -23,6 +23,7 @@ const resources = {
       socialMedia: "Social Media",
       contactUs: "Contact Us!",
       values: "Our values",
+      writeUs: "Write to us!",
     },
   },
   pl: {
@@ -46,6 +47,7 @@ const resources = {
       socialMedia: "Media społecznościowe",
       contactUs: "Skontaktuj się z nami!",
       values: "Nasze wartości",
+      writeUs: "Napisz do nas!",
     },
   },
 };
