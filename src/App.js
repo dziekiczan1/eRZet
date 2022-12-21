@@ -35,27 +35,27 @@ const App = () => {
         ></div>
         <Arrow color={"#0adab9"} props={executeScroll} />
         <div className="flex flex-col">
-          <div
+          <section
             className={
               theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
             }
           >
             <About innerRef={myRef} />
-          </div>
-          <div
+          </section>
+          <section
             className={
               theme === "dark" ? "bg-navy-700 w-full" : "bg-light-100 w-full"
             }
           >
             <Portfolio />
-          </div>
-          <div
+          </section>
+          <section
             className={
               theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
             }
           >
             <Pricing />
-          </div>
+          </section>
         </div>
       </main>
       <footer>

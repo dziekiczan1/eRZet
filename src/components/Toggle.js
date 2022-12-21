@@ -3,7 +3,7 @@ import { ThemeContext } from "../Theme";
 
 const Toggle = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
-  const [enabled, setEnabled] = useState(false);
+  const [enabled, setEnabled] = useState(theme === "dark" ? false : true);
 
   return (
     <div className="flex flex-row items-center gap-2">
