@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import Heading from "../Heading";
+import Button from "../Button";
 import { staggerContainer, zoomIn, slideIn } from "../../utils/motion";
 import { ThemeContext } from "../../Theme";
 import pricingLogo from "../../assets/pricing-logo.svg";
@@ -34,7 +35,7 @@ const Pricing = () => {
       <div className="flex flex-row w-full mb-12">
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
-          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-1/2 mr-4 px-20 pt-8 text-justify"
+          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-1/2 mr-4 px-8 pt-8 text-justify"
         >
           <form
             action="https://formbold.com/s/FORM_ID"
@@ -53,7 +54,7 @@ const Pricing = () => {
                 name="name"
                 id="name"
                 placeholder="Full Name"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
             <div class="mb-5">
@@ -68,7 +69,7 @@ const Pricing = () => {
                 name="email"
                 id="email"
                 placeholder="example@domain.com"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
             <div class="mb-5">
@@ -83,7 +84,7 @@ const Pricing = () => {
                 name="subject"
                 id="subject"
                 placeholder="Enter your subject"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
             <div class="mb-5">
@@ -98,19 +99,19 @@ const Pricing = () => {
                 name="message"
                 id="message"
                 placeholder="Type your message"
-                class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
-            <div>
-              <button className="flex flex-row justify-center gap-2 w-full bg-navy-700 p-4 text-white text-bold outline-offset-4 outline outline-2 outline-orange-100">
+            <div className="px-1.5">
+              <Button className="w-full">
                 <svg width={24} viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
-                    d="M19.7 12.9L14 18.6H11.7V16.3L17.4 10.6L19.7 12.9M23.1 12.1C23.1 12.4 22.8 12.7 22.5 13L20 15.5L19.1 14.6L21.7 12L21.1 11.4L20.4 12.1L18.1 9.8L20.3 7.7C20.5 7.5 20.9 7.5 21.2 7.7L22.6 9.1C22.8 9.3 22.8 9.7 22.6 10C22.4 10.2 22.2 10.4 22.2 10.6C22.2 10.8 22.4 11 22.6 11.2C22.9 11.5 23.2 11.8 23.1 12.1M3 20V4H10V9H15V10.5L17 8.5V8L11 2H3C1.9 2 1 2.9 1 4V20C1 21.1 1.9 22 3 22H15C16.1 22 17 21.1 17 20H3M11 17.1C10.8 17.1 10.6 17.2 10.5 17.2L10 15H8.5L6.4 16.7L7 14H5.5L4.5 19H6L8.9 16.4L9.5 18.7H10.5L11 18.6V17.1Z"
+                    d="M13 19C13 15.69 15.69 13 19 13C20.1 13 21.12 13.3 22 13.81V6C22 4.89 21.1 4 20 4H4C2.89 4 2 4.89 2 6V18C2 19.11 2.9 20 4 20H13.09C13.04 19.67 13 19.34 13 19M4 8V6L12 11L20 6V8L12 13L4 8M20 22V20H16V18H20V16L23 19L20 22Z"
                   />
                 </svg>
                 <p>{t("writeUs")}</p>
-              </button>
+              </Button>
             </div>
           </form>
         </motion.div>

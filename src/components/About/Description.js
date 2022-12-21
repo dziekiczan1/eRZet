@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 import Heading from "../Heading";
+import Button from "../Button";
 import { zoomIn, slideIn } from "../../utils/motion";
 import { ThemeContext } from "../../Theme";
 import aboutLogo from "../../assets/about-logo.svg";
@@ -67,7 +68,7 @@ const Description = () => {
             luctus convallis. Nunc malesuada eros lobortis erat facilisis
             sodales. Vivamus luctus arcu sed lacus blandit aliquam.
           </p>
-          <button className="flex flex-row gap-2 bg-navy-700 p-4 text-white text-bold outline-offset-4 outline outline-2 outline-orange-100">
+          <Button>
             <svg width={24} viewBox="0 0 24 24">
               <path
                 fill="currentColor"
@@ -75,7 +76,7 @@ const Description = () => {
               />
             </svg>
             <p>{t("writeUs")}</p>
-          </button>
+          </Button>
         </motion.div>
       </div>
     </>

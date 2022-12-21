@@ -1,8 +1,9 @@
+// @ts-nocheck
 import React, { useContext, useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 
-import { slideIn, staggerContainer } from "../../utils/motion";
+import { staggerContainer, zoomIn } from "../../utils/motion";
 import Heading from "../Heading";
 import { ThemeContext } from "../../Theme";
 import { PortfolioData } from "./PortfolioData";
@@ -61,7 +62,10 @@ const Portfolio = () => {
         {t("portfolio")}
         <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mb-2">
+      <motion.div
+        variants={zoomIn(0.2, 0.6)}
+        className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mb-2"
+      >
         {PortfolioData.map((slide, index) => {
           return (
             <div className="w-full" key={index}>
@@ -129,7 +133,7 @@ const Portfolio = () => {
             />
           </svg>
         </div>
-      </div>
+      </motion.div>
     </motion.div>
   );
 };
