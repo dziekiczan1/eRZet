@@ -45,7 +45,11 @@ const Pricing = () => {
             <div class="mb-5">
               <label
                 for="name"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class={
+                  theme === "dark"
+                    ? "mb-3 block text-base font-medium text-white"
+                    : "mb-3 block text-base font-medium text-[#07074D]"
+                }
               >
                 Full Name
               </label>
@@ -60,7 +64,11 @@ const Pricing = () => {
             <div class="mb-5">
               <label
                 for="email"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class={
+                  theme === "dark"
+                    ? "mb-3 block text-base font-medium text-white"
+                    : "mb-3 block text-base font-medium text-[#07074D]"
+                }
               >
                 Email Address
               </label>
@@ -75,22 +83,36 @@ const Pricing = () => {
             <div class="mb-5">
               <label
                 for="subject"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class={
+                  theme === "dark"
+                    ? "mb-3 block text-base font-medium text-white"
+                    : "mb-3 block text-base font-medium text-[#07074D]"
+                }
               >
                 Subject
               </label>
-              <input
-                type="text"
+              <select
                 name="subject"
                 id="subject"
-                placeholder="Enter your subject"
                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
-              />
+              >
+                <option value="" disabled selected>
+                  Enter your subject
+                </option>
+                <option value="spa">Single Page Application</option>
+                <option value="mpa">Multi Page Application</option>
+                <option value="spa1">Single Page Application</option>
+                <option value="mpa2">Multi Page Application</option>
+              </select>
             </div>
             <div class="mb-5">
               <label
                 for="message"
-                class="mb-3 block text-base font-medium text-[#07074D]"
+                class={
+                  theme === "dark"
+                    ? "mb-3 block text-base font-medium text-white"
+                    : "mb-3 block text-base font-medium text-[#07074D]"
+                }
               >
                 Message
               </label>
@@ -99,7 +121,7 @@ const Pricing = () => {
                 name="message"
                 id="message"
                 placeholder="Type your message"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
+                class="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
             <div className="px-1.5">
