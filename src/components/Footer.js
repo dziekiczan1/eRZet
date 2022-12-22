@@ -31,7 +31,7 @@ const Footer = () => {
           : "flex flex-row w-full bg-light-100 py-12 px-8"
       }
     >
-      <div className="flex flex-col w-1/2">
+      <div className="flex flex-col w-1/2 overflow-hidden">
         <div className="w-full flex flex-row gap-8">
           <div className="flex flex-col w-1/2">
             <motion.img
