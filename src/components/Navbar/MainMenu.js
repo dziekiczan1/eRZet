@@ -14,8 +14,8 @@ const MainMenu = ({ menuItems }) => {
     <ul
       className={
         theme === "dark"
-          ? "flex flex-row w-3/4 text-white z-50 gap-8 cursor-pointer my-16"
-          : "flex flex-row w-3/4 text-black z-50 gap-8 cursor-pointer my-16"
+          ? "flex flex-row w-full md:w-3/4 px-4 md:px-0 text-white z-50 gap-4 md:gap-8 cursor-pointer my-8 md:my-16"
+          : "flex flex-row w-full md:w-3/4 px-4 md:px-0 text-black z-50 gap-4 md:gap-8 cursor-pointer my-8 md:my-16"
       }
     >
       {menuItems?.map((item) => (
