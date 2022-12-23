@@ -91,7 +91,7 @@ const Footer = () => {
             }
           >
             {t("contactUs")}
-            <div class="w-[15rem] h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
+            <div className="w-[15rem] h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
           </Heading>
           <motion.div
             className="flex flex-row items-center gap-4 mb-4"
@@ -116,7 +116,7 @@ const Footer = () => {
             }
           >
             {t("socialMedia")}
-            <div class="w-[15rem] h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
+            <div className="w-[15rem] h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
           </Heading>
           <motion.ul
             variants={textVariant(0.2)}

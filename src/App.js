@@ -25,7 +25,7 @@ const App = () => {
       <header className={theme === "dark" ? "bg-navy-700" : "bg-light-100"}>
         <Navbar />
       </header>
-      <main className="relative flex justify-center">
+      <main className="relative flex justify-center overflow-hidden">
         <div
           className={
             theme === "dark"

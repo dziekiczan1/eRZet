@@ -42,10 +42,10 @@ const Pricing = () => {
             method="POST"
             className="w-full"
           >
-            <div class="mb-5">
+            <div className="mb-5">
               <label
                 for="name"
-                class={
+                className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
                     : "mb-3 block text-base font-medium text-[#07074D]"
@@ -58,13 +58,13 @@ const Pricing = () => {
                 name="name"
                 id="name"
                 placeholder="Full Name"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
-            <div class="mb-5">
+            <div className="mb-5">
               <label
                 for="email"
-                class={
+                className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
                     : "mb-3 block text-base font-medium text-[#07074D]"
@@ -77,13 +77,13 @@ const Pricing = () => {
                 name="email"
                 id="email"
                 placeholder="example@domain.com"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
-            <div class="mb-5">
+            <div className="mb-5">
               <label
                 for="subject"
-                class={
+                className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
                     : "mb-3 block text-base font-medium text-[#07074D]"
@@ -94,7 +94,7 @@ const Pricing = () => {
               <select
                 name="subject"
                 id="subject"
-                class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               >
                 <option value="" disabled selected>
                   Enter your subject
@@ -105,10 +105,10 @@ const Pricing = () => {
                 <option value="mpa2">Multi Page Application</option>
               </select>
             </div>
-            <div class="mb-5">
+            <div className="mb-5">
               <label
                 for="message"
-                class={
+                className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
                     : "mb-3 block text-base font-medium text-[#07074D]"
@@ -121,7 +121,7 @@ const Pricing = () => {
                 name="message"
                 id="message"
                 placeholder="Type your message"
-                class="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
+                className="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
             <div className="px-1.5">

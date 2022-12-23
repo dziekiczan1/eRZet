@@ -20,15 +20,15 @@ const Description = () => {
         size="h1"
         className={
           theme === "dark"
-            ? "text-white mx-auto my-8"
-            : "text-slate-600 mx-auto my-8"
+            ? "text-white text-center mx-auto my-4 md:my-8 px-4 md:px-0"
+            : "text-slate-600 text-center mx-auto my-4 md:my-8 px-4 md:px-0"
         }
       >
         {t("welcome")}
-        <div class="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
+        <div className="w-full md:w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent px-4 md:px-0"></div>
       </Heading>
-      <div className="flex flex-row w-full mb-12">
-        <div className="flex justify-center w-1/2 ml-4 px-8 pt-8">
+      <div className="flex flex-col md:flex-row w-full mb-12">
+        <div className="flex justify-center w-full md:w-1/2 ml-0 md:ml-4 px-2 md:px-8 pt-8">
           <div
             className={
               theme === "dark"
@@ -40,18 +40,19 @@ const Description = () => {
               variants={zoomIn(0.4, 0.6)}
               src={theme === "dark" ? aboutLogo : aboutLogoLight}
               alt="eRZet - About us"
-              width={600}
-              className="relative"
+              className="w-[300px] md:w-[600px] relative"
             />
           </div>
         </div>
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
-          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-1/2 mr-4 px-20 pt-8 text-justify"
+          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-full md:w-1/2 mr-4 px-4 md:px-20 pt-2 md:pt-8 text-justify"
         >
           <p
             className={
-              theme === "dark" ? "text-white my-8" : "text-slate-600 my-8"
+              theme === "dark"
+                ? "text-white my-6 md:my-8"
+                : "text-slate-600 my-6 md:my-8"
             }
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

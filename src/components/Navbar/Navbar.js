@@ -27,7 +27,7 @@ const Navbar = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
-      className="flex flex-col items-center relative navbar"
+      className="flex flex-col items-center relative navbar overflow-hidden"
     >
       <motion.img
         variants={zoomIn(0.4, 1)}

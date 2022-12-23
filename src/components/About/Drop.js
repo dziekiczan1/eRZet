@@ -22,9 +22,9 @@ const Drop = () => {
         }
       >
         {t("values")}
-        <div class="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
+        <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="mx-auto w-3/4 flex flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20 pt-8">
+      <div className="mx-auto w-full md:w-3/4 flex flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20 pt-8">
         {dropItems?.map((drop) => (
           <motion.div
             variants={zoomIn(0.6, 0.6)}
@@ -34,8 +34,8 @@ const Drop = () => {
             <div
               className={
                 theme === "dark"
-                  ? `${drop.bgColor} relative w-[400px] h-[400px] ${drop.boxShadow} ${drop.borderRadius} ${drop.boxShadowAfter} after:absolute ${drop.afterTop} ${drop.afterLeft} ${drop.afterWidth} ${drop.afterHeight} after:rounded-full after:opacity-90 ${drop.boxShadowBefore} before:absolute ${drop.beforeTop} ${drop.beforeLeft} ${drop.beforeWidth} ${drop.beforeHeight} before:rounded-full before:opacity-90 duration-500 ease-in-out hover:rounded-full`
-                  : `bg-light-100 relative w-[400px] h-[400px] ${drop.boxShadow} ${drop.borderRadius} ${drop.boxShadowAfter} after:absolute ${drop.afterTop} ${drop.afterLeft} ${drop.afterWidth} ${drop.afterHeight} after:rounded-full after:opacity-90 ${drop.boxShadowBefore} before:absolute ${drop.beforeTop} ${drop.beforeLeft} ${drop.beforeWidth} ${drop.beforeHeight} before:rounded-full before:opacity-90 duration-500 ease-in-out hover:rounded-full`
+                  ? `${drop.bgColor} relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] ${drop.boxShadow} ${drop.borderRadius} ${drop.boxShadowAfter} after:absolute ${drop.afterTop} ${drop.afterLeft} ${drop.afterWidth} ${drop.afterHeight} after:rounded-full after:opacity-90 ${drop.boxShadowBefore} before:absolute ${drop.beforeTop} ${drop.beforeLeft} ${drop.beforeWidth} ${drop.beforeHeight} before:rounded-full before:opacity-90 duration-500 ease-in-out hover:rounded-full`
+                  : `bg-light-100 relative w-[280px] h-[280px] md:w-[400px] md:h-[400px] ${drop.boxShadow} ${drop.borderRadius} ${drop.boxShadowAfter} after:absolute ${drop.afterTop} ${drop.afterLeft} ${drop.afterWidth} ${drop.afterHeight} after:rounded-full after:opacity-90 ${drop.boxShadowBefore} before:absolute ${drop.beforeTop} ${drop.beforeLeft} ${drop.beforeWidth} ${drop.beforeHeight} before:rounded-full before:opacity-90 duration-500 ease-in-out hover:rounded-full`
               }
             >
               <div className="flex justify-center items-center flex-col text-center py-10 px-6 gap-2">
