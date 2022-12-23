@@ -56,7 +56,7 @@ const MainMenu = ({ menuItems }) => {
                   }`
             }
           >
-            {t(item.name)}
+            <p className="hidden md:block">{t(item.name)}</p>
           </a>
         </li>
       ))}
