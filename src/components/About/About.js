@@ -18,7 +18,7 @@ const About = ({ innerRef }) => {
       viewport={
         isMobile ? { once: false, amount: 0.1 } : { once: false, amount: 0.4 }
       }
-      className="h-full flex flex-col justify-center py-20 z-20 overflow-hidden"
+      className="h-full flex flex-col justify-center pt-20 pb-0 md:pb-12 z-20 overflow-hidden"
       ref={innerRef}
     >
       <Description />

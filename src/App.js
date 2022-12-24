@@ -48,14 +48,14 @@ const App = () => {
             }
           >
             <Portfolio />
-          </section>
+          </section> */}
           <section
             className={
               theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"
             }
           >
             <Pricing />
-          </section> */}
+          </section>
         </div>
       </main>
       {/* <footer>

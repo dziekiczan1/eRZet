@@ -51,8 +51,8 @@ const Description = () => {
           <p
             className={
               theme === "dark"
-                ? "text-white my-6 md:my-8"
-                : "text-slate-600 my-6 md:my-8"
+                ? "text-white mt-6 mb-8 md:mt-8"
+                : "text-slate-600 mt-6 mb-8 md:mt-8"
             }
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec

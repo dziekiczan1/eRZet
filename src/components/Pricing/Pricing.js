@@ -12,6 +12,7 @@ import pricingLogo from "../../assets/pricing-logo.svg";
 const Pricing = () => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
+  const isMobile = window.innerWidth < 768;
 
   return (
     <motion.div
@@ -19,23 +20,23 @@ const Pricing = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.4 }}
-      className="relative flex flex-col justify-center pt-10 pb-16"
+      className="relative flex flex-col justify-center pb-0 md:pb-16"
     >
       <Heading
         size="h1"
         className={
           theme === "dark"
-            ? "text-white mx-auto mt-8 my-16"
-            : "text-slate-600 mx-auto mt-8 my-16"
+            ? "text-white text-center mx-auto my-4 md:my-8 px-4 md:px-0"
+            : "text-slate-600 text-center mx-auto my-4 md:my-8 px-4 md:px-0"
         }
       >
         {t("pricelist")}
-        <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
+        <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="flex flex-row w-full mb-12">
+      <div className="flex flex-col md:flex-row w-full mb-0 md:mb-12">
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
-          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-1/2 mr-4 px-8 pt-8 text-justify"
+          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-full md:w-1/2 mr-4 px-4 md:px-8 pt-8 text-justify"
         >
           <form
             action="https://formbold.com/s/FORM_ID"
@@ -124,7 +125,7 @@ const Pricing = () => {
                 className="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
-            <div className="px-1.5">
+            <div className="mt-8 px-1.5">
               <Button className="w-full">
                 <svg width={24} viewBox="0 0 24 24">
                   <path
@@ -137,7 +138,7 @@ const Pricing = () => {
             </div>
           </form>
         </motion.div>
-        <div className="flex justify-center w-1/2 ml-4 px-8 pt-8">
+        <div className="flex justify-center w-full md:w-1/2 mt-8 md:mt-0 ml-0 md:ml-4 px-4 md:px-8 pt-8">
           <div
             className={
               theme === "dark"
