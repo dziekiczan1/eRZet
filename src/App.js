@@ -42,7 +42,7 @@ const App = () => {
           >
             <About innerRef={myRef} />
           </section>
-          <section
+          {/* <section
             className={
               theme === "dark" ? "bg-navy-700 w-full" : "bg-light-100 w-full"
             }
@@ -55,12 +55,12 @@ const App = () => {
             }
           >
             <Pricing />
-          </section>
+          </section> */}
         </div>
       </main>
-      <footer>
+      {/* <footer>
         <Footer />
-      </footer>
+      </footer> */}
     </>
   );
 };

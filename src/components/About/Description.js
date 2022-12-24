@@ -27,7 +27,7 @@ const Description = () => {
         {t("welcome")}
         <div className="w-full md:w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent px-4 md:px-0"></div>
       </Heading>
-      <div className="flex flex-col md:flex-row w-full mb-12">
+      <div className="flex flex-col md:flex-row w-full mb-8 md:mb-12">
         <div className="flex justify-center w-full md:w-1/2 ml-0 md:ml-4 px-2 md:px-8 pt-8">
           <div
             className={
