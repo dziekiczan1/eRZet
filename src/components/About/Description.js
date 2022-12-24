@@ -25,22 +25,23 @@ const Description = () => {
         }
       >
         {t("welcome")}
-        <div className="w-full md:w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent px-4 md:px-0"></div>
+        <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent px-4 md:px-0"></div>
       </Heading>
       <div className="flex flex-col md:flex-row w-full mb-8 md:mb-12">
-        <div className="flex justify-center w-full md:w-1/2 ml-0 md:ml-4 px-2 md:px-8 pt-8">
+        <div className="flex justify-center w-full md:w-1/2 ml-0 md:ml-4 px-4 md:px-8 pt-8">
           <div
             className={
               theme === "dark"
-                ? "bg-gradient-to-t from-navy-400 to-transparent rounded-xl border-b-4 border-b-[#bcbcbc] px-4"
-                : "bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569] px-4"
+                ? "bg-gradient-to-t from-navy-400 to-transparent rounded-xl border-b-4 border-b-[#bcbcbc]"
+                : "bg-gradient-to-t from-light-100 to-transparent rounded-xl border-b-4 border-b-[#475569]"
             }
           >
             <motion.img
               variants={zoomIn(0.4, 0.6)}
               src={theme === "dark" ? aboutLogo : aboutLogoLight}
               alt="eRZet - About us"
-              className="w-[300px] md:w-[600px] relative"
+              width={600}
+              className="relative"
             />
           </div>
         </div>

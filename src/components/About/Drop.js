@@ -22,9 +22,9 @@ const Drop = () => {
         }
       >
         {t("values")}
-        <div className="w-26 h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
+        <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="mx-auto w-full md:w-3/4 flex flex-col md:flex-row flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20 pt-8">
+      <div className="mx-auto w-full md:w-3/4 flex flex-col md:flex-row flex-wrap justify-center 2xl:flex-nowrap 2xl:justify-between gap-10 2xl:gap-20 pt-8 mb-8 md:mb-0">
         {dropItems?.map((drop) => (
           <motion.div
             variants={zoomIn(0.6, 0.6)}
