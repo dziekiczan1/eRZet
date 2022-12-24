@@ -58,9 +58,9 @@ const App = () => {
           </section>
         </div>
       </main>
-      {/* <footer>
+      <footer>
         <Footer />
-      </footer> */}
+      </footer>
     </>
   );
 };

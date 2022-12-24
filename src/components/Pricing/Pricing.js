@@ -20,7 +20,7 @@ const Pricing = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.4 }}
-      className="relative flex flex-col justify-center pb-0 md:pb-16"
+      className="relative flex flex-col justify-center pb-0 md:pb-12"
     >
       <Heading
         size="h1"
@@ -33,7 +33,7 @@ const Pricing = () => {
         {t("pricelist")}
         <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
-      <div className="flex flex-col md:flex-row w-full mb-0 md:mb-12">
+      <div className="flex flex-col md:flex-row w-full mb-12">
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
           className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-full md:w-1/2 mr-4 px-4 md:px-8 pt-8 text-justify"
