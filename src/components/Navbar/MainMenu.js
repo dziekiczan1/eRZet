@@ -30,33 +30,35 @@ const MainMenu = ({ menuItems }) => {
           onMouseEnter={() => setIsHovered(item.id)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width={30}
-          >
-            <path
-              fill={
-                isHovered === item.id && item.id !== active
-                  ? "#4a8787"
-                  : `${active === item.id ? "#feb106" : "#4B5563"}`
+          <a href={`#${item.link}`}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width={30}
+              className="mx-auto"
+            >
+              <path
+                fill={
+                  isHovered === item.id && item.id !== active
+                    ? "#4a8787"
+                    : `${active === item.id ? "#feb106" : "#4B5563"}`
+                }
+                d={item.svgD}
+              />
+            </svg>
+            <span
+              className={
+                isHovered === item.id && item.id !== active && theme === "light"
+                  ? "text-[#4a8787]"
+                  : `${
+                      active === item.id && theme === "light"
+                        ? "text-orange-100"
+                        : "#4B5563"
+                    }`
               }
-              d={item.svgD}
-            />
-          </svg>
-          <a
-            href="#"
-            className={
-              isHovered === item.id && item.id !== active && theme === "light"
-                ? "text-[#4a8787]"
-                : `${
-                    active === item.id && theme === "light"
-                      ? "text-orange-100"
-                      : "#4B5563"
-                  }`
-            }
-          >
-            <p className="hidden lg:block">{t(item.name)}</p>
+            >
+              <p className="hidden lg:block">{t(item.name)}</p>
+            </span>
           </a>
         </li>
       ))}

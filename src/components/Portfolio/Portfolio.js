@@ -33,7 +33,7 @@ const Portfolio = () => {
     return () => {
       resetTimeout();
     };
-  }, [current]);
+  }, [current, length]);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -49,7 +49,7 @@ const Portfolio = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
-      className="portfolio relative flex flex-col justify-center pb-0 lg:pb-12"
+      className="portfolio relative flex flex-col justify-center pb-12"
     >
       <Heading
         size="h1"
@@ -64,7 +64,7 @@ const Portfolio = () => {
       </Heading>
       <motion.div
         variants={zoomIn(0.2, 0.6)}
-        className="mx-auto w-4/5 h-[400px] lg:h-[500px] relative mt-4"
+        className="mx-auto w-[90%] lg:w-4/5 relative mt-4"
       >
         {PortfolioData.map((slide, index) => {
           return (
@@ -78,34 +78,40 @@ const Portfolio = () => {
                   <div
                     className={
                       theme === "dark"
-                        ? "flex flex-row h-[500px] w-full bg-navy-400/40 rounded-2xl overflow-hidden"
-                        : "flex flex-row h-[500px] w-full bg-[#dfe3e8] rounded-2xl overflow-hidden"
+                        ? "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-navy-400/40 rounded-2xl overflow-hidden"
+                        : "flex flex-col lg:flex-row h-[450px] lg:h-[500px] w-full bg-[#dfe3e8] rounded-2xl overflow-hidden"
                     }
                   >
-                    <div className="relative w-1/2 min-h-full">
-                      <img src={slide.src} className="h-full object-cover" />
+                    <div className="hidden lg:block relative w-1/2 lg:h-full">
+                      <img
+                        src={slide.src}
+                        className="h-full object-cover"
+                        alt={slide.title}
+                      />
                     </div>
-                    <div className="flex justify-center items-center w-1/2">
-                      <div className="flex flex-col items-center w-4/5 gap-8">
+                    <div className="flex justify-center items-center w-full lg:w-1/2 p-2 lg:p-0">
+                      <div className="flex flex-col justify-center items-center w-4/5 gap-4 lg:gap-8">
                         <div className="flex justify-center items-center w-full">
                           <img
                             src={slide.companyLogo}
                             className="object-contain"
+                            alt={slide.title}
                           />
                         </div>
                         <div className="flex justify-center items-center w-full">
-                          <div className="w-[100px] h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden">
+                          <div className="w-[75px] lg:w-[100px] h-[75px] lg:h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden">
                             <img
                               src={slide.personProfile}
                               className="object-contain"
+                              alt={slide.person}
                             />
                           </div>
                         </div>
                         <div className="flex flex-col justify-center items-center w-full gap-4">
-                          <p className="text-center italic text-white text-sm">
+                          <p className="text-center italic text-white text-xs lg:text-sm">
                             {slide.rec}
                           </p>
-                          <p className="text-center font-bold text-white text-md">
+                          <p className="text-center font-bold text-white text-sm lg:text-md">
                             {slide.person}, {slide.title}
                           </p>
                         </div>
@@ -118,7 +124,7 @@ const Portfolio = () => {
           );
         })}
         <div
-          className="absolute top-1/2 cursor-pointer left-6 lg:left-1/5"
+          className="absolute top-1/2 cursor-pointer left-2 lg:left-1/5"
           onClick={prevSlide}
         >
           <svg
@@ -135,7 +141,7 @@ const Portfolio = () => {
           </svg>
         </div>
         <div
-          className="absolute top-1/2 cursor-pointer right-6 lg:right-1/5"
+          className="absolute top-1/2 cursor-pointer right-2 lg:right-1/5"
           onClick={nextSlide}
         >
           <svg

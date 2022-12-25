@@ -58,7 +58,7 @@ const Footer = () => {
             </address>
           </div>
           <motion.div
-            className="w-full lg:w-1/2 overflow-hidden"
+            className="flex justify-center w-full lg:w-1/2 overflow-hidden"
             variants={slideIn("right", "tween", 0, 0.6)}
           >
             <iframe
@@ -66,6 +66,7 @@ const Footer = () => {
               width="400"
               height="250"
               loading="lazy"
+              title="eRZet company location"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
           </motion.div>
