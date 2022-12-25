@@ -51,14 +51,14 @@ const Pricing = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.4 }}
-      className="relative flex flex-col justify-center pb-0 md:pb-12"
+      className="relative flex flex-col justify-center pb-0 lg:pb-12"
     >
       <Heading
         size="h1"
         className={
           theme === "dark"
-            ? "text-white text-center mx-auto my-4 md:my-8 px-4 md:px-0"
-            : "text-slate-600 text-center mx-auto my-4 md:my-8 px-4 md:px-0"
+            ? "text-white text-center mx-auto my-4 lg:my-8 px-4 lg:px-0"
+            : "text-slate-600 text-center mx-auto my-4 lg:my-8 px-4 lg:px-0"
         }
       >
         {t("pricelist")}
@@ -75,10 +75,10 @@ const Pricing = () => {
           </div>
         )
       )}
-      <div className="flex flex-col md:flex-row w-full mb-12">
+      <div className="flex flex-col lg:flex-row w-full mb-12">
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
-          className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-full md:w-1/2 mr-4 px-4 md:px-8 pt-8 text-justify"
+          className="flex flex-col font-semibold lg:text-base 2xl:text-xl justify-center items-center w-full lg:w-1/2 mr-4 px-4 lg:px-8 pt-8 text-justify"
         >
           <form
             id="pricing-form"
@@ -186,7 +186,7 @@ const Pricing = () => {
             </div>
           </form>
         </motion.div>
-        <div className="flex justify-center w-full md:w-1/2 mt-8 md:mt-0 ml-0 md:ml-4 px-4 md:px-8 pt-8">
+        <div className="flex justify-center w-full lg:w-1/2 mt-8 lg:mt-0 ml-0 lg:ml-4 px-4 lg:px-8 pt-8">
           <div
             className={
               theme === "dark"

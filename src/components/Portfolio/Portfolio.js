@@ -49,14 +49,14 @@ const Portfolio = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
-      className="portfolio relative flex flex-col justify-center pb-0 md:pb-12"
+      className="portfolio relative flex flex-col justify-center pb-0 lg:pb-12"
     >
       <Heading
         size="h1"
         className={
           theme === "dark"
-            ? "text-white text-center mx-auto my-4 md:my-8 px-4 md:px-0"
-            : "text-slate-600 text-center mx-auto my-4 md:my-8 px-4 md:px-0"
+            ? "text-white text-center mx-auto my-4 lg:my-8 px-4 lg:px-0"
+            : "text-slate-600 text-center mx-auto my-4 lg:my-8 px-4 lg:px-0"
         }
       >
         {t("portfolio")}
@@ -64,7 +64,7 @@ const Portfolio = () => {
       </Heading>
       <motion.div
         variants={zoomIn(0.2, 0.6)}
-        className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mt-4"
+        className="mx-auto w-4/5 h-[400px] lg:h-[500px] relative mt-4"
       >
         {PortfolioData.map((slide, index) => {
           return (
@@ -118,7 +118,7 @@ const Portfolio = () => {
           );
         })}
         <div
-          className="absolute top-1/2 cursor-pointer left-6 md:left-1/5"
+          className="absolute top-1/2 cursor-pointer left-6 lg:left-1/5"
           onClick={prevSlide}
         >
           <svg
@@ -135,7 +135,7 @@ const Portfolio = () => {
           </svg>
         </div>
         <div
-          className="absolute top-1/2 cursor-pointer right-6 md:right-1/5"
+          className="absolute top-1/2 cursor-pointer right-6 lg:right-1/5"
           onClick={nextSlide}
         >
           <svg

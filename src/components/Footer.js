@@ -23,13 +23,13 @@ const Footer = () => {
       viewport={{ once: false, amount: 0.5 }}
       className={
         theme === "dark"
-          ? "flex flex-col md:flex-row w-full bg-navy-800 py-8 md:py-12 px-4 md:px-8"
-          : "flex flex-col md:flex-row w-full bg-light-100 py-8 md:py-12 px-4 md:px-8"
+          ? "flex flex-col lg:flex-row w-full bg-navy-800 py-8 lg:py-12 px-4 lg:px-8"
+          : "flex flex-col lg:flex-row w-full bg-light-100 py-8 lg:py-12 px-4 lg:px-8"
       }
     >
-      <div className="flex flex-col w-full md:w-1/2 overflow-hidden">
-        <div className="w-full flex flex-col md:flex-row gap-8">
-          <div className="flex items-center md:items-start flex-col w-full md:w-1/2">
+      <div className="flex flex-col w-full lg:w-1/2 overflow-hidden">
+        <div className="w-full flex flex-col lg:flex-row gap-8">
+          <div className="flex items-center lg:items-start flex-col w-full lg:w-1/2">
             <motion.img
               variants={textVariant(0.2)}
               src={theme === "dark" ? logo : logoDark}
@@ -47,8 +47,8 @@ const Footer = () => {
             <address
               className={
                 theme === "dark"
-                  ? "flex flex-col items-center md:items-start w-full text-white not-italic"
-                  : "flex flex-col items-center md:items-start w-full text-black not-italic"
+                  ? "flex flex-col items-center lg:items-start w-full text-white not-italic"
+                  : "flex flex-col items-center lg:items-start w-full text-black not-italic"
               }
             >
               <p>ul. Prowiantowa, nr 15, lok. 49</p>
@@ -58,7 +58,7 @@ const Footer = () => {
             </address>
           </div>
           <motion.div
-            className="w-full md:w-1/2 overflow-hidden"
+            className="w-full lg:w-1/2 overflow-hidden"
             variants={slideIn("right", "tween", 0, 0.6)}
           >
             <iframe
@@ -71,13 +71,13 @@ const Footer = () => {
           </motion.div>
         </div>
       </div>
-      <div className="border-t md:border-l border-orange-100/20 my-8 md:my-8 md:mx-16"></div>
-      <div className="flex flex-col w-full md:w-1/2">
+      <div className="border-t lg:border-l border-orange-100/20 my-8 lg:my-8 lg:mx-16"></div>
+      <div className="flex flex-col w-full lg:w-1/2">
         <div
           className={
             theme === "dark"
-              ? "flex flex-col items-center md:items-start mb-8 text-white"
-              : "flex flex-col items-center md:items-start mb-8 text-light-500"
+              ? "flex flex-col items-center lg:items-start mb-8 text-white"
+              : "flex flex-col items-center lg:items-start mb-8 text-light-500"
           }
         >
           <Heading
@@ -89,16 +89,16 @@ const Footer = () => {
             {t("contactUs")}
             <div className="w-full h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
           </Heading>
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-center lg:items-start">
             <motion.div
-              className="flex flex-row items-center gap-2 md:gap-4 mb-4"
+              className="flex flex-row items-center gap-2 lg:gap-4 mb-4"
               variants={textVariant(0.2)}
             >
               <img src={iconPhone} alt="eRZet Phone Number" width={30} />
               <p className="text-lg">505 - 933 - 394</p>
             </motion.div>
             <motion.div
-              className="flex flex-row items-center gap-2 md:gap-4 "
+              className="flex flex-row items-center gap-2 lg:gap-4 "
               variants={textVariant(0.2)}
             >
               <img src={iconEmail} alt="eRZet Email address" width={30} />
@@ -106,7 +106,7 @@ const Footer = () => {
             </motion.div>
           </div>
         </div>
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex flex-col items-center lg:items-start">
           <Heading
             size="h2"
             className={
@@ -116,7 +116,7 @@ const Footer = () => {
             {t("socialMedia")}
             <div className="w-full h-1 bg-gradient-to-r from-orange-100 to-transparent"></div>
           </Heading>
-          <div className="flex flex-row justify-center md:justify-start">
+          <div className="flex flex-row justify-center lg:justify-start">
             <motion.ul
               variants={textVariant(0.2)}
               className="relative cursor-pointer list-none flex gap-8 text-light-500"
