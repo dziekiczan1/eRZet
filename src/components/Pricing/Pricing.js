@@ -1,6 +1,7 @@
 // @ts-nocheck
-import React, { useContext } from "react";
+import React, { useRef, useState, useContext } from "react";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 
 import Heading from "../Heading";
@@ -12,7 +13,37 @@ import pricingLogo from "../../assets/pricing-logo.svg";
 const Pricing = () => {
   const { t } = useTranslation();
   const { theme } = useContext(ThemeContext);
-  const isMobile = window.innerWidth < 768;
+  const [isSend, setIsSend] = useState(false);
+  const [isError, setIsError] = useState(false);
+  const form = useRef();
+  const nameRef = useRef();
+  const mailRef = useRef();
+  const subRef = useRef();
+  const messageRef = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_CONTACT_SERVICE,
+        "pricing-form",
+        form.current,
+        process.env.REACT_APP_CONTACT_KEY
+      )
+      .then(
+        (result) => {
+          setIsSend(true);
+          nameRef.current.value = "";
+          mailRef.current.value = "";
+          subRef.current.value = "";
+          messageRef.current.value = "";
+        },
+        (error) => {
+          setIsError(true);
+        }
+      );
+  };
 
   return (
     <motion.div
@@ -33,19 +64,32 @@ const Pricing = () => {
         {t("pricelist")}
         <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
       </Heading>
+      {isSend ? (
+        <div className="w-full text-center text-2xl text-white">
+          Your message has been successfully sent!
+        </div>
+      ) : (
+        isError && (
+          <div className="w-full text-center text-2xl text-white">
+            Oops! Looks like there is a problem with sending your message!
+          </div>
+        )
+      )}
       <div className="flex flex-col md:flex-row w-full mb-12">
         <motion.div
           variants={slideIn("right", "tween", 0, 0.3)}
           className="flex flex-col font-semibold md:text-base 2xl:text-xl justify-center items-center w-full md:w-1/2 mr-4 px-4 md:px-8 pt-8 text-justify"
         >
           <form
-            action="https://formbold.com/s/FORM_ID"
+            id="pricing-form"
+            ref={form}
+            onSubmit={sendEmail}
             method="POST"
             className="w-full"
           >
             <div className="mb-5">
               <label
-                for="name"
+                htmlFor="name"
                 className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
@@ -56,15 +100,16 @@ const Pricing = () => {
               </label>
               <input
                 type="text"
-                name="name"
+                name="full_name"
                 id="name"
+                ref={nameRef}
                 placeholder="Full Name"
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
             <div className="mb-5">
               <label
-                for="email"
+                htmlFor="email"
                 className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
@@ -75,15 +120,16 @@ const Pricing = () => {
               </label>
               <input
                 type="email"
-                name="email"
+                name="user_email"
                 id="email"
+                ref={mailRef}
                 placeholder="example@domain.com"
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
             <div className="mb-5">
               <label
-                for="subject"
+                htmlFor="subject"
                 className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
@@ -95,9 +141,10 @@ const Pricing = () => {
               <select
                 name="subject"
                 id="subject"
+                ref={subRef}
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               >
-                <option value="" disabled selected>
+                <option value="" disabled defaultValue>
                   Enter your subject
                 </option>
                 <option value="spa">Single Page Application</option>
@@ -108,7 +155,7 @@ const Pricing = () => {
             </div>
             <div className="mb-5">
               <label
-                for="message"
+                htmlFor="message"
                 className={
                   theme === "dark"
                     ? "mb-3 block text-base font-medium text-white"
@@ -121,12 +168,13 @@ const Pricing = () => {
                 rows="4"
                 name="message"
                 id="message"
+                ref={messageRef}
                 placeholder="Type your message"
                 className="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
             <div className="mt-8 px-1.5">
-              <Button className="w-full">
+              <Button className="w-full" type="submit">
                 <svg width={24} viewBox="0 0 24 24">
                   <path
                     fill="currentColor"
