@@ -6,12 +6,8 @@ import { textVariant, staggerContainer, slideIn } from "../utils/motion";
 
 import Heading from "./Heading";
 import { ThemeContext } from "../Theme";
-import logo from "../assets/logo.png";
-import logoDark from "../assets/logo_dark.png";
-import iconFb from "../assets/footer/fb-logo.svg";
-import iconIg from "../assets/footer/instagram-logo.svg";
-import iconLi from "../assets/footer/linkedin-logo.svg";
-import iconTw from "../assets/footer/twitter-logo.svg";
+import logo from "../assets/logo.webp";
+import logoDark from "../assets/logo_dark.webp";
 import iconEmail from "../assets/footer/email-logo.svg";
 import iconPhone from "../assets/footer/phone-logo.svg";
 

@@ -14,10 +14,10 @@ import MainMenu from "../Navbar/MainMenu";
 import menuItems from "../Navbar/MenuItems";
 import LanguageSwitcher from "../Navbar/LanguageSwitcher";
 
-import logo from "../../assets/logo.png";
-import logoDark from "../../assets/logo_dark.png";
-import goldRec from "../../assets/goldrec.png";
-import azureRec from "../../assets/azurerec.png";
+import logo from "../../assets/logo.webp";
+import logoDark from "../../assets/logo_dark.webp";
+import goldRec from "../../assets/goldrec.webp";
+import azureRec from "../../assets/azurerec.webp";
 
 const Navbar = () => {
   const { theme } = useContext(ThemeContext);

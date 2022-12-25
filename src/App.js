@@ -42,13 +42,13 @@ const App = () => {
           >
             <About innerRef={myRef} />
           </section>
-          {/* <section
+          <section
             className={
               theme === "dark" ? "bg-navy-700 w-full" : "bg-light-100 w-full"
             }
           >
             <Portfolio />
-          </section> */}
+          </section>
           <section
             className={
               theme === "dark" ? "bg-navy-500 w-full" : "bg-[#dfe3e8] w-full"

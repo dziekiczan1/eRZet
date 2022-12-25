@@ -49,14 +49,14 @@ const Portfolio = () => {
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0.5 }}
-      className="portfolio relative flex flex-col justify-center pt-10 pb-16"
+      className="portfolio relative flex flex-col justify-center pb-0 md:pb-12"
     >
       <Heading
         size="h1"
         className={
           theme === "dark"
-            ? "text-white mx-auto mt-8 my-16"
-            : "text-slate-600 mx-auto mt-8 my-16"
+            ? "text-white text-center mx-auto my-4 md:my-8 px-4 md:px-0"
+            : "text-slate-600 text-center mx-auto my-4 md:my-8 px-4 md:px-0"
         }
       >
         {t("portfolio")}
@@ -64,7 +64,7 @@ const Portfolio = () => {
       </Heading>
       <motion.div
         variants={zoomIn(0.2, 0.6)}
-        className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mb-2"
+        className="mx-auto w-4/5 h-[400px] md:h-[500px] relative mt-4"
       >
         {PortfolioData.map((slide, index) => {
           return (
@@ -78,21 +78,39 @@ const Portfolio = () => {
                   <div
                     className={
                       theme === "dark"
-                        ? "flex justify-center min-h-[500px] w-full bg-navy-400/40 rounded-2xl"
-                        : "flex justify-center min-h-[500px] w-full bg-[#dfe3e8] rounded-2xl"
+                        ? "flex flex-row h-[500px] w-full bg-navy-400/40 rounded-2xl overflow-hidden"
+                        : "flex flex-row h-[500px] w-full bg-[#dfe3e8] rounded-2xl overflow-hidden"
                     }
                   >
-                    <Heading
-                      size="h2"
-                      className={
-                        theme === "dark" ? "text-white" : "text-slate-600"
-                      }
-                    >
-                      {slide.title}
-                    </Heading>
-                  </div>
-                  <div className="z-10 w-[400px] absolute -top-10 -left-10 rounded-xl overflow-hidden">
-                    <img src={slide.src} />
+                    <div className="relative w-1/2 min-h-full">
+                      <img src={slide.src} className="h-full object-cover" />
+                    </div>
+                    <div className="flex justify-center items-center w-1/2">
+                      <div className="flex flex-col items-center w-4/5 gap-8">
+                        <div className="flex justify-center items-center w-full">
+                          <img
+                            src={slide.companyLogo}
+                            className="object-contain"
+                          />
+                        </div>
+                        <div className="flex justify-center items-center w-full">
+                          <div className="w-[100px] h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden">
+                            <img
+                              src={slide.personProfile}
+                              className="object-contain"
+                            />
+                          </div>
+                        </div>
+                        <div className="flex flex-col justify-center items-center w-full gap-4">
+                          <p className="text-center italic text-white text-sm">
+                            {slide.rec}
+                          </p>
+                          <p className="text-center font-bold text-white text-md">
+                            {slide.person}, {slide.title}
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </motion.div>
               )}
