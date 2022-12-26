@@ -79,13 +79,13 @@ const Portfolio = () => {
                     className={
                       theme === "dark"
                         ? "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-navy-400/40 rounded-2xl overflow-hidden"
-                        : "flex flex-col lg:flex-row h-[450px] lg:h-[500px] w-full bg-[#dfe3e8] rounded-2xl overflow-hidden"
+                        : "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-[#dfe3e8]/70 rounded-2xl overflow-hidden"
                     }
                   >
                     <div className="hidden lg:block relative w-1/2 lg:h-full">
                       <img
                         src={slide.src}
-                        className="h-full object-cover"
+                        className="w-auto h-full object-cover"
                         alt={slide.title}
                       />
                     </div>
@@ -94,7 +94,7 @@ const Portfolio = () => {
                         <div className="flex justify-center items-center w-full">
                           <img
                             src={slide.companyLogo}
-                            className="object-contain"
+                            className="w-full h-full object-contain"
                             alt={slide.title}
                           />
                         </div>
@@ -102,16 +102,22 @@ const Portfolio = () => {
                           <div className="w-[75px] lg:w-[100px] h-[75px] lg:h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden">
                             <img
                               src={slide.personProfile}
-                              className="object-contain"
+                              className="w-full h-full object-contain"
                               alt={slide.person}
                             />
                           </div>
                         </div>
-                        <div className="flex flex-col justify-center items-center w-full gap-4">
-                          <p className="text-center italic text-white text-xs lg:text-sm">
-                            {slide.rec}
+                        <div
+                          className={
+                            theme === "dark"
+                              ? "flex flex-col justify-center items-center w-full gap-4 text-white"
+                              : "flex flex-col justify-center items-center w-full gap-4 text-slate-600"
+                          }
+                        >
+                          <p className="text-center italic text-xs lg:text-sm">
+                            {t(slide.rec)}
                           </p>
-                          <p className="text-center font-bold text-white text-sm lg:text-md">
+                          <p className="text-center font-bold text-sm lg:text-md">
                             {slide.person}, {slide.title}
                           </p>
                         </div>

@@ -34,12 +34,12 @@ const Footer = () => {
               variants={textVariant(0.2)}
               src={theme === "dark" ? logo : logoDark}
               alt="eRZet"
-              className="z-10 w-3/4 mb-4"
+              className="z-10 w-3/4 h-auto mb-4"
             />
             <Heading
               size="h2"
               className={
-                theme === "dark" ? "mb-4 text-white" : "mb-4 text-black"
+                theme === "dark" ? "mb-4 text-white" : "mb-4 text-slate-600"
               }
             >
               {t("erzet")}
@@ -48,7 +48,7 @@ const Footer = () => {
               className={
                 theme === "dark"
                   ? "flex flex-col items-center lg:items-start w-full text-white not-italic"
-                  : "flex flex-col items-center lg:items-start w-full text-black not-italic"
+                  : "flex flex-col items-center lg:items-start w-full text-slate-600 not-italic"
               }
             >
               <p>ul. Prowiantowa, nr 15, lok. 49</p>
@@ -95,14 +95,24 @@ const Footer = () => {
               className="flex flex-row items-center gap-2 lg:gap-4 mb-4"
               variants={textVariant(0.2)}
             >
-              <img src={iconPhone} alt="eRZet Phone Number" width={30} />
+              <img
+                src={iconPhone}
+                alt="eRZet Phone Number"
+                width={30}
+                height={30}
+              />
               <p className="text-lg">505 - 933 - 394</p>
             </motion.div>
             <motion.div
               className="flex flex-row items-center gap-2 lg:gap-4 "
               variants={textVariant(0.2)}
             >
-              <img src={iconEmail} alt="eRZet Email address" width={30} />
+              <img
+                src={iconEmail}
+                alt="eRZet Email address"
+                width={30}
+                height={30}
+              />
               <p className="text-lg">p.rzadkowolski@gmail.com</p>
             </motion.div>
           </div>

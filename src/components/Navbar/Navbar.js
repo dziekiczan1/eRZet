@@ -33,14 +33,14 @@ const Navbar = () => {
         variants={zoomIn(0.4, 1)}
         animate={{ rotate: 270 }}
         src={goldRec}
-        alt=""
-        className="hidden lg:block absolute h-[18rem] 2xl:h-[24rem] bottom-10 right-0 2xl:right-16"
+        alt="Header Background Image Gold"
+        className="hidden lg:block absolute w-auto h-[18rem] 2xl:h-[24rem] bottom-10 right-0 2xl:right-16 select-none"
       />
       <motion.img
         variants={slideIn("left", "tween", 0, 0.3)}
         src={azureRec}
-        alt=""
-        className="hidden lg:block absolute h-[22rem] 2xl:h-[24rem] left-6 2xl:left-16 top-0"
+        alt="Header Background Image Azure"
+        className="hidden lg:block absolute w-auto h-[22rem] 2xl:h-[24rem] left-6 2xl:left-16 top-0 select-none"
       />
       <motion.div
         className="flex justify-center w-full mb-8"
@@ -60,7 +60,7 @@ const Navbar = () => {
           variants={textVariant(0.5)}
           src={theme === "dark" ? logo : logoDark}
           alt="eRZet"
-          className="z-50"
+          className="w-auto h-auto z-50"
         />
       </div>
       <MainMenu menuItems={menuItems} />

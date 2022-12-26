@@ -56,21 +56,9 @@ const Description = () => {
                 : "text-slate-600 mt-6 mb-8 lg:mt-8"
             }
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc,
-            eget sagittis eros efficitur eget. In interdum, nisi nec volutpat
-            tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel
-            ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc
-            malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu
-            sed lacus blandit aliquam. Lorem ipsum dolor sit amet, consectetur
-            adipiscing elit. Donec scelerisque nisl in interdum condimentum.
-            Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In
-            interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam,
-            nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus
-            luctus convallis. Nunc malesuada eros lobortis erat facilisis
-            sodales. Vivamus luctus arcu sed lacus blandit aliquam.
+            {t("aboutDescription")}
           </p>
-          <Button>
+          <Button appearance={theme === "dark" ? "base" : "baseLight"}>
             <svg width={24} viewBox="0 0 24 24">
               <path
                 fill="currentColor"

@@ -66,12 +66,12 @@ const Pricing = () => {
       </Heading>
       {isSend ? (
         <div className="w-full text-center text-2xl text-white">
-          Your message has been successfully sent!
+          {t("sendSuccess")}
         </div>
       ) : (
         isError && (
           <div className="w-full text-center text-2xl text-white">
-            Oops! Looks like there is a problem with sending your message!
+            {t("sendError")}
           </div>
         )
       )}
@@ -96,14 +96,14 @@ const Pricing = () => {
                     : "mb-3 block text-base font-medium text-[#07074D]"
                 }
               >
-                Full Name
+                {t("fullName")}
               </label>
               <input
                 type="text"
                 name="full_name"
                 id="name"
                 ref={nameRef}
-                placeholder="Full Name"
+                placeholder={t("fullName")}
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
@@ -116,14 +116,14 @@ const Pricing = () => {
                     : "mb-3 block text-base font-medium text-[#07074D]"
                 }
               >
-                Email Address
+                {t("emailAddress")}
               </label>
               <input
                 type="email"
                 name="user_email"
                 id="email"
                 ref={mailRef}
-                placeholder="example@domain.com"
+                placeholder={t("emailAddress")}
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               />
             </div>
@@ -136,7 +136,7 @@ const Pricing = () => {
                     : "mb-3 block text-base font-medium text-[#07074D]"
                 }
               >
-                Subject
+                {t("subject")}
               </label>
               <select
                 name="subject"
@@ -145,7 +145,7 @@ const Pricing = () => {
                 className="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               >
                 <option value="" disabled defaultValue>
-                  Enter your subject
+                  {t("subject")}
                 </option>
                 <option value="spa">Single Page Application</option>
                 <option value="mpa">Multi Page Application</option>
@@ -162,19 +162,23 @@ const Pricing = () => {
                     : "mb-3 block text-base font-medium text-[#07074D]"
                 }
               >
-                Message
+                {t("message")}
               </label>
               <textarea
                 rows="4"
                 name="message"
                 id="message"
                 ref={messageRef}
-                placeholder="Type your message"
+                placeholder={t("message")}
                 className="w-full rounded-md border border-[#e0e0e09c] bg-white py-3 px-4 text-base font-medium outline-none focus:border-pink-100 focus:shadow-md"
               ></textarea>
             </div>
             <div className="mt-8 px-1.5">
-              <Button className="w-full" type="submit">
+              <Button
+                className="w-full"
+                type="submit"
+                appearance={theme === "dark" ? "base" : "baseLight"}
+              >
                 <svg width={24} viewBox="0 0 24 24">
                   <path
                     fill="currentColor"

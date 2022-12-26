@@ -53,7 +53,9 @@ const Drop = () => {
                   <Heading
                     size="h2"
                     className={
-                      theme === "dark" ? "text-white mb-2" : "text-black mb-2"
+                      theme === "dark"
+                        ? "text-white mb-2"
+                        : "text-slate-600 mb-2"
                     }
                   >
                     {t(drop.title)}
@@ -62,7 +64,7 @@ const Drop = () => {
                     className={
                       theme === "dark"
                         ? "text-white text-justify lg:text-center text-sm px-0 lg:px-6"
-                        : "text-black text-justify lg:text-center text-sm px-0 lg:px-6"
+                        : "text-slate-600 text-justify lg:text-center text-sm px-0 lg:px-6"
                     }
                   >
                     {t(drop.content)}

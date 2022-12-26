@@ -1,3 +1,4 @@
+import React from "react";
 import { useState, useContext } from "react";
 import { ThemeContext } from "../Theme";
 
@@ -14,9 +15,15 @@ const Toggle = () => {
         />
       </svg>
       <div className="flex flex-row items-center justify-center overflow-hidden">
-        <label className="inline-flex relative items-center cursor-pointer">
+        <label
+          htmlFor="switcher"
+          className="inline-flex relative items-center cursor-pointer"
+        >
           <input
             type="checkbox"
+            id="switcher"
+            name="switch-input"
+            placeholder="Theme color switcher"
             className="sr-only peer"
             checked={enabled}
             readOnly
