@@ -33,12 +33,14 @@ const Navbar = () => {
         variants={zoomIn(0.4, 1)}
         animate={{ rotate: 270 }}
         src={goldRec}
+        loading="lazy"
         alt="Header Background Image Gold"
         className="hidden lg:block absolute w-auto h-[18rem] 2xl:h-[24rem] bottom-10 right-0 2xl:right-16 select-none"
       />
       <motion.img
         variants={slideIn("left", "tween", 0, 0.3)}
         src={azureRec}
+        loading="lazy"
         alt="Header Background Image Azure"
         className="hidden lg:block absolute w-auto h-[22rem] 2xl:h-[24rem] left-6 2xl:left-16 top-0 select-none"
       />
@@ -59,6 +61,9 @@ const Navbar = () => {
         <motion.img
           variants={textVariant(0.5)}
           src={theme === "dark" ? logo : logoDark}
+          loading="lazy"
+          width={706}
+          height={219}
           alt="eRZet"
           className="w-auto h-auto z-50"
         />

@@ -9,7 +9,7 @@ const resources = {
       home: "Home Page",
       about: "About Us",
       portfolio: "Portfolio",
-      pricelist: "Price List",
+      pricelist: "Pricing",
       contact: "Contact",
       punctuality: "Punctuality",
       modernity: "Modernity",
@@ -31,14 +31,16 @@ const resources = {
       emailAddress: "Email Address",
       subject: "Choose Subject",
       message: "Message",
-      aboutDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu sed lacus blandit aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu sed lacus blandit aliquam.",
+      aboutDescriptionOne:
+        "eRZet is a company that designs and creates websites for various industries. From the beginning of our activity, we have focused on providing the highest quality services, tailored to the individual needs of our clients. Our team consists of experienced specialists who have extensive knowledge in the field of website development. Thanks to their commitment and professionalism, we are able to provide our clients with the best solutions.",
+      aboutDescriptionTwo:
+        "Our mission is to provide websites that meet the requirements of our clients and help them develop their business. We believe that a good website is the basis for success in today's world. Therefore, we approach each order individually and try to provide our clients with the best solutions.",
       projectRecOne:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex.",
+        "eRZet is a unique company that offers extremely professional services. I am impressed by their knowledge, experience and commitment to each order. The eRZet team always tries to understand the needs of its customers and adapt to their expectations.",
       projectRecTwo:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "I would like to recommend eRZet as a unique company that offers extremely professional services. The eRZet team is very experienced and knowledgeable in their field. They are always willing to help and advise the best solutions for their clients.",
       projectRecThree:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+        "I am very satisfied with the services provided by eRZet. The eRZet team is extremely professional and reliable, and their work always meets my expectations. I highly recommend eRZet for anyone looking for the best services in their industry.",
     },
   },
   pl: {
@@ -69,14 +71,18 @@ const resources = {
       emailAddress: "Adres email",
       subject: "Wybierz temat",
       message: "Wiadomość",
-      aboutDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu sed lacus blandit aliquam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex. Curabitur viverra nibh posuere risus luctus convallis. Nunc malesuada eros lobortis erat facilisis sodales. Vivamus luctus arcu sed lacus blandit aliquam.",
+      aboutDescriptionOne:
+        "eRZet to firma zajmująca się projektowaniem i tworzeniem stron internetowych dla różnych branż. Od początku naszej działalności skupiamy się na świadczeniu najwyższej jakości usług, dostosowanych do indywidualnych potrzeb naszych klientów. Nasz zespół składa się z doświadczonych specjalistów, którzy posiadają ogromną wiedzę z zakresu tworzenia stron internetowych. Dzięki ich zaangażowaniu i profesjonalizmowi jesteśmy w stanie zapewnić naszym klientom najlepsze rozwiązania.",
+      aboutDescriptionTwo:
+        "Naszą misją jest dostarczanie stron internetowych, które spełniają wymagania naszych klientów i pomagają im w rozwoju ich biznesu. Wierzymy, że dobra strona internetowa to podstawa sukcesu w dzisiejszym świecie. Dlatego też do każdego zlecenia podchodzimy indywidualnie i staramy się zapewnić naszym klientom najlepsze rozwiązania.",
       projectRecOne:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec scelerisque nisl in interdum condimentum. Cras aliquet turpis nunc, eget sagittis eros efficitur eget. In interdum, nisi nec volutpat tincidunt, risus ex pellentesque quam, nec porttitor arcu eros vel ex.",
+        "eRZet to wyjątkowa firma, która oferuje niezwykle profesjonalne usługi. Jestem pod wrażeniem ich wiedzy, doświadczenia i zaangażowania w każde zlecenie. Zespół eRZet zawsze stara się zrozumieć potrzeby swoich klientów i dostosować się do ich oczekiwań.",
       projectRecTwo:
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+        "Chciałbym polecić eRZet jako wyjątkową firmę, która oferuje niezwykle profesjonalne usługi. Zespół eRZet jest bardzo doświadczony i posiada ogromną wiedzę w swojej dziedzinie. Zawsze chętnie służą pomocą i doradzają najlepsze rozwiązania dla swoich klientów.",
       projectRecThree:
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.",
+        "Jestem bardzo zadowolony z usług świadczonych przez eRZet. Zespół eRZet jest niezwykle profesjonalny i rzetelny, a ich praca zawsze spełnia moje oczekiwania. Gorąco polecam eRZet dla każdego, kto szuka najlepszych usług w swojej branży.",
+      pricingContent:
+        "W naszej firmie cenimy indywidualne potrzeby naszych klientów i dlatego każdą ofertę rozpatrujemy osobno, starając się dobrać optymalne rozwiązania dopasowane do ich indywidualnych potrzeb. Dzięki temu możemy zaproponować naszym klientom najlepsze możliwe warunki współpracy. Jesteśmy otwarci na rozmowy i chętnie służymy pomocą w doborze odpowiednich rozwiązań. Zachęcamy do kontaktu i zapraszamy do współpracy.",
     },
   },
 };

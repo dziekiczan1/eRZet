@@ -41,6 +41,7 @@ const Description = () => {
               src={theme === "dark" ? aboutLogo : aboutLogoLight}
               alt="eRZet - About us"
               width={600}
+              height={600}
               className="relative"
             />
           </div>
@@ -49,15 +50,16 @@ const Description = () => {
           variants={slideIn("right", "tween", 0, 0.3)}
           className="flex flex-col font-semibold lg:text-base 2xl:text-xl justify-center items-center w-full lg:w-1/2 mr-4 px-4 lg:px-20 pt-2 lg:pt-8 text-justify"
         >
-          <p
+          <div
             className={
               theme === "dark"
-                ? "text-white mt-6 mb-8 lg:mt-8"
-                : "text-slate-600 mt-6 mb-8 lg:mt-8"
+                ? "flex flex-col gap-4 text-white mt-6 mb-8 lg:mt-8"
+                : "flex flex-col gap-4 text-slate-600 mt-6 mb-8 lg:mt-8"
             }
           >
-            {t("aboutDescription")}
-          </p>
+            <p>{t("aboutDescriptionOne")}</p>
+            <p>{t("aboutDescriptionTwo")}</p>
+          </div>
           <Button appearance={theme === "dark" ? "base" : "baseLight"}>
             <svg width={24} viewBox="0 0 24 24">
               <path

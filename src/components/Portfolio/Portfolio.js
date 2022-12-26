@@ -87,6 +87,7 @@ const Portfolio = () => {
                         src={slide.src}
                         className="w-auto h-full object-cover"
                         alt={slide.title}
+                        loading="lazy"
                       />
                     </div>
                     <div className="flex justify-center items-center w-full lg:w-1/2 p-2 lg:p-0">
@@ -96,14 +97,22 @@ const Portfolio = () => {
                             src={slide.companyLogo}
                             className="w-full h-full object-contain"
                             alt={slide.title}
+                            loading="lazy"
                           />
                         </div>
                         <div className="flex justify-center items-center w-full">
-                          <div className="w-[75px] lg:w-[100px] h-[75px] lg:h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden">
+                          <div
+                            className={
+                              theme === "dark"
+                                ? "relative text-center w-[75px] lg:w-[100px] h-[75px] lg:h-[100px] border-2 border-orange-100 rounded-full bg-navy-500 overflow-hidden"
+                                : "relative text-center w-[75px] lg:w-[100px] h-[75px] lg:h-[100px] border-2 border-orange-100 rounded-full bg-[#dfe3e8] overflow-hidden"
+                            }
+                          >
                             <img
                               src={slide.personProfile}
-                              className="w-full h-full object-contain"
+                              className="absolute top-0 w-full h-full object-contain"
                               alt={slide.person}
+                              loading="lazy"
                             />
                           </div>
                         </div>

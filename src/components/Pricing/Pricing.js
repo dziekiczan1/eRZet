@@ -203,6 +203,7 @@ const Pricing = () => {
               src={pricingLogo}
               alt="eRZet - Contact us"
               width={600}
+              height={600}
               className="relative"
             />
           </div>

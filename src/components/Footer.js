@@ -34,6 +34,8 @@ const Footer = () => {
               variants={textVariant(0.2)}
               src={theme === "dark" ? logo : logoDark}
               alt="eRZet"
+              width={706}
+              height={219}
               className="z-10 w-3/4 h-auto mb-4"
             />
             <Heading

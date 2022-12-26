@@ -14,9 +14,9 @@ export const PortfolioData = [
     person: "Mike Scofield",
     title: "NBApp",
     src: "https://piotr.rzadkowolski.dev/erzet/extras/pr2.webp",
-    companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr1company.webp",
+    companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr2company.webp",
     personProfile:
-      "https://piotr.rzadkowolski.dev/erzet/extras/pr1profile.webp",
+      "https://piotr.rzadkowolski.dev/erzet/extras/pr2profile.webp",
     rec: "projectRecTwo",
   },
   {
@@ -24,9 +24,9 @@ export const PortfolioData = [
     person: "Danuta Rzadkowolska",
     title: "Cash Flow",
     src: "https://piotr.rzadkowolski.dev/erzet/extras/pr3.webp",
-    companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr1company.webp",
+    companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr3company.webp",
     personProfile:
-      "https://piotr.rzadkowolski.dev/erzet/extras/pr1profile.webp",
+      "https://piotr.rzadkowolski.dev/erzet/extras/pr3profile.webp",
     rec: "projectRecThree",
   },
 ];
