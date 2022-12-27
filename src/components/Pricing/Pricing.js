@@ -147,10 +147,13 @@ const Pricing = () => {
                 <option value="" disabled defaultValue>
                   {t("subject")}
                 </option>
-                <option value="spa">Single Page Application</option>
-                <option value="mpa">Multi Page Application</option>
-                <option value="spa1">Single Page Application</option>
-                <option value="mpa2">Multi Page Application</option>
+                <option value="singlePageApp">Single Page Application</option>
+                <option value="multiPageApp">Multi Page Application</option>
+                <option value="staticWebsite">Static Website</option>
+                <option value="dynamicWebsite">Dynamic Website</option>
+                <option value="eCommerce">E-commerce</option>
+                <option value="blogWebsite">Blog Website</option>
+                <option value="other">Other</option>
               </select>
             </div>
             <div className="mb-5">
