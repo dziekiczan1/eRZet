@@ -41,6 +41,13 @@ const resources = {
         "I would like to recommend eRZet as a unique company that offers extremely professional services. The eRZet team is very experienced and knowledgeable in their field. They are always willing to help and advise the best solutions for their clients.",
       projectRecThree:
         "I am very satisfied with the services provided by eRZet. The eRZet team is extremely professional and reliable, and their work always meets my expectations. I highly recommend eRZet for anyone looking for the best services in their industry.",
+      singlePageAppWithDesign: "Single Page Application + design",
+      multiPageAppWithDesign: "Multi Page Application + design",
+      singlePageApp: "Single Page Application",
+      multiPageApp: "Multi Page Application",
+      eCommerce: "E-commerce",
+      blogWebsite: "Blog Website",
+      other: "Other",
     },
   },
   pl: {
@@ -83,6 +90,13 @@ const resources = {
         "Jestem bardzo zadowolony z usług świadczonych przez eRZet. Zespół eRZet jest niezwykle profesjonalny i rzetelny, a ich praca zawsze spełnia moje oczekiwania. Gorąco polecam eRZet dla każdego, kto szuka najlepszych usług w swojej branży.",
       pricingContent:
         "W naszej firmie cenimy indywidualne potrzeby naszych klientów i dlatego każdą ofertę rozpatrujemy osobno, starając się dobrać optymalne rozwiązania dopasowane do ich indywidualnych potrzeb. Dzięki temu możemy zaproponować naszym klientom najlepsze możliwe warunki współpracy. Jesteśmy otwarci na rozmowy i chętnie służymy pomocą w doborze odpowiednich rozwiązań. Zachęcamy do kontaktu i zapraszamy do współpracy.",
+      singlePageAppWithDesign: "Pojedyncza strona z projektem graficznym",
+      multiPageAppWithDesign: "Multi strona z projektem graficznym",
+      singlePageApp: "Pojedyncza strona z własną grafiką",
+      multiPageApp: "Multi strona z własną grafiką",
+      eCommerce: "e-Sklep",
+      blogWebsite: "Strona Bloga",
+      other: "Inne",
     },
   },
 };
