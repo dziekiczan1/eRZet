@@ -184,7 +184,7 @@ const Pricing = () => {
               <Button
                 className="w-full"
                 type="submit"
-                appearance={theme === "dark" ? "base" : "baseLight"}
+                appearance={theme === "dark" ? "baseDark" : "baseLight"}
               >
                 <svg width={24} viewBox="0 0 24 24">
                   <path

@@ -60,7 +60,7 @@ const Description = () => {
             <p>{t("aboutDescriptionOne")}</p>
             <p>{t("aboutDescriptionTwo")}</p>
           </div>
-          <Button appearance={theme === "dark" ? "base" : "baseLight"}>
+          <Button appearance={theme === "dark" ? "baseDark" : "baseLight"}>
             <svg width={24} viewBox="0 0 24 24">
               <path
                 fill="currentColor"
