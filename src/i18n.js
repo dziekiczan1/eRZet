@@ -87,7 +87,7 @@ const resources = {
       projectRecTwo:
         "Chciałbym polecić eRZet jako wyjątkową firmę, która oferuje niezwykle profesjonalne usługi. Zespół eRZet jest bardzo doświadczony i posiada ogromną wiedzę w swojej dziedzinie. Zawsze chętnie służą pomocą i doradzają najlepsze rozwiązania dla swoich klientów.",
       projectRecThree:
-        "Jestem bardzo zadowolony z usług świadczonych przez eRZet. Zespół eRZet jest niezwykle profesjonalny i rzetelny, a ich praca zawsze spełnia moje oczekiwania. Gorąco polecam eRZet dla każdego, kto szuka najlepszych usług w swojej branży.",
+        "Jestem bardzo zadowolona z usług świadczonych przez eRZet. Zespół eRZet jest niezwykle profesjonalny i rzetelny, a ich praca zawsze spełnia moje oczekiwania. Gorąco polecam eRZet dla każdego, kto szuka najlepszych usług w swojej branży.",
       pricingContent:
         "W naszej firmie cenimy indywidualne potrzeby naszych klientów i dlatego każdą ofertę rozpatrujemy osobno, starając się dobrać optymalne rozwiązania dopasowane do ich indywidualnych potrzeb. Dzięki temu możemy zaproponować naszym klientom najlepsze możliwe warunki współpracy. Jesteśmy otwarci na rozmowy i chętnie służymy pomocą w doborze odpowiednich rozwiązań. Zachęcamy do kontaktu i zapraszamy do współpracy.",
       singlePageAppWithDesign: "Pojedyncza strona z projektem graficznym",

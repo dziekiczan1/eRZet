@@ -1,9 +1,10 @@
 export const PortfolioData = [
   {
     id: 0,
-    person: "Piotr Rzadkowolski",
+    person: "Michał M.",
     title: "Where To? Dive!",
-    src: "https://piotr.rzadkowolski.dev/erzet/extras/pr1.webp",
+    pageSrc: "https://memories.piotr.rzadkowolski.dev/",
+    imgSrc: "https://piotr.rzadkowolski.dev/erzet/extras/pr1.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr1company.webp",
     personProfile:
       "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",
@@ -11,9 +12,10 @@ export const PortfolioData = [
   },
   {
     id: 1,
-    person: "Mike Scofield",
+    person: "Kamil P.",
     title: "NBApp",
-    src: "https://piotr.rzadkowolski.dev/erzet/extras/pr2.webp",
+    pageSrc: "https://nbapplication.netlify.app/",
+    imgSrc: "https://piotr.rzadkowolski.dev/erzet/extras/pr2.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr2company.webp",
     personProfile:
       "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",
@@ -21,9 +23,10 @@ export const PortfolioData = [
   },
   {
     id: 2,
-    person: "Danuta Rzadkowolska",
+    person: "Danuta Rz.",
     title: "Cash Flow",
-    src: "https://piotr.rzadkowolski.dev/erzet/extras/pr3.webp",
+    pageSrc: "https://piotr.rzadkowolski.dev/projects/cashflow/",
+    imgSrc: "https://piotr.rzadkowolski.dev/erzet/extras/pr3.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr3company.webp",
     personProfile:
       "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",

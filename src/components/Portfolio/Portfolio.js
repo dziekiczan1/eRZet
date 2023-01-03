@@ -78,27 +78,39 @@ const Portfolio = () => {
                   <div
                     className={
                       theme === "dark"
-                        ? "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-navy-400/40 rounded-2xl overflow-hidden"
-                        : "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-[#dfe3e8]/70 rounded-2xl overflow-hidden"
+                        ? "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-navy-400/40 rounded-2xl shadow-lg overflow-hidden"
+                        : "flex flex-col items-center justify-center lg:flex-row h-[450px] lg:h-[500px] w-full bg-[#dfe3e8]/70 rounded-2xl shadow-lg overflow-hidden"
                     }
                   >
                     <div className="hidden lg:block relative w-1/2 lg:h-full">
-                      <img
-                        src={slide.src}
-                        className="w-auto h-full object-cover"
-                        alt={slide.title}
-                        loading="lazy"
-                      />
+                      <a
+                        href={slide.pageSrc}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <img
+                          src={slide.imgSrc}
+                          className="w-auto h-full object-cover"
+                          alt={slide.title}
+                          loading="lazy"
+                        />
+                      </a>
                     </div>
                     <div className="flex justify-center items-center w-full lg:w-1/2 p-2 lg:p-0">
                       <div className="flex flex-col justify-center items-center w-4/5 gap-4 lg:gap-8">
                         <div className="flex justify-center items-center w-full">
-                          <img
-                            src={slide.companyLogo}
-                            className="w-full h-full object-contain"
-                            alt={slide.title}
-                            loading="lazy"
-                          />
+                          <a
+                            href={slide.pageSrc}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img
+                              src={slide.companyLogo}
+                              className="w-full h-full object-contain"
+                              alt={slide.title}
+                              loading="lazy"
+                            />
+                          </a>
                         </div>
                         <div className="flex justify-center items-center w-full">
                           <div
