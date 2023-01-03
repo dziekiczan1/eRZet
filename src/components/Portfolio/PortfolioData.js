@@ -6,7 +6,7 @@ export const PortfolioData = [
     src: "https://piotr.rzadkowolski.dev/erzet/extras/pr1.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr1company.webp",
     personProfile:
-      "https://piotr.rzadkowolski.dev/erzet/extras/pr1profile.webp",
+      "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",
     rec: "projectRecOne",
   },
   {
@@ -16,7 +16,7 @@ export const PortfolioData = [
     src: "https://piotr.rzadkowolski.dev/erzet/extras/pr2.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr2company.webp",
     personProfile:
-      "https://piotr.rzadkowolski.dev/erzet/extras/pr2profile.webp",
+      "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",
     rec: "projectRecTwo",
   },
   {
@@ -26,7 +26,7 @@ export const PortfolioData = [
     src: "https://piotr.rzadkowolski.dev/erzet/extras/pr3.webp",
     companyLogo: "https://piotr.rzadkowolski.dev/erzet/extras/pr3company.webp",
     personProfile:
-      "https://piotr.rzadkowolski.dev/erzet/extras/pr3profile.webp",
+      "https://piotr.rzadkowolski.dev/erzet/extras/profileplaceholder.svg",
     rec: "projectRecThree",
   },
 ];
