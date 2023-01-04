@@ -10,6 +10,7 @@ import logo from "../assets/logo.webp";
 import logoDark from "../assets/logo_dark.webp";
 import iconEmail from "../assets/footer/email-logo.svg";
 import iconPhone from "../assets/footer/phone-logo.svg";
+import contactSvg from "../assets/footer/contact.svg";
 
 const Footer = () => {
   const { t } = useTranslation();
@@ -23,8 +24,8 @@ const Footer = () => {
       viewport={{ once: false, amount: 0.5 }}
       className={
         theme === "dark"
-          ? "flex flex-col lg:flex-row w-full bg-navy-800 py-8 lg:py-12 px-4 lg:px-8"
-          : "flex flex-col lg:flex-row w-full bg-light-100 py-8 lg:py-12 px-4 lg:px-8"
+          ? "flex flex-col lg:flex-row w-full bg-navy-800 py-8 lg:py-12 px-4 lg:px-8 relative overflow-hidden"
+          : "flex flex-col lg:flex-row w-full bg-light-100 py-8 lg:py-12 px-4 lg:px-8 relative overflow-hidden"
       }
     >
       <div className="flex flex-col w-full lg:w-1/2 overflow-hidden">
@@ -221,6 +222,14 @@ const Footer = () => {
             </motion.ul>
           </div>
         </div>
+        <motion.img
+          src={contactSvg}
+          variants={slideIn("down", "tween", 0, 0.6)}
+          alt="Contact us!"
+          width={320}
+          height={320}
+          className="hidden xl:block absolute bottom-8 right-0 2xl:right-[8rem]"
+        />
       </div>
     </motion.div>
   );
