@@ -228,7 +228,7 @@ const Footer = () => {
           alt="Contact us!"
           width={320}
           height={320}
-          className="hidden xl:block absolute bottom-8 right-0 2xl:right-[8rem]"
+          className="hidden 2xl:block absolute bottom-8 right-[6rem]"
         />
       </div>
     </motion.div>
