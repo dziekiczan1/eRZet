@@ -48,6 +48,8 @@ const resources = {
       eCommerce: "E-commerce",
       blogWebsite: "Blog Website",
       other: "Other",
+      pricingInfo:
+        "Feel free to contact us to arrange details regarding website design. We set the price individually for each client, taking into account their needs and expectations. We will be happy to answer any questions and help you choose the best option for your company.",
     },
   },
   pl: {
