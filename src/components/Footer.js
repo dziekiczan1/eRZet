@@ -146,6 +146,7 @@ const Footer = () => {
                   href="https://www.facebook.com/people/ERZET/100089004531475/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Facebook page of eRZet Company"
                 >
                   <svg
                     strokeLinejoin="round"
@@ -173,6 +174,7 @@ const Footer = () => {
                   href="https://twitter.com/eRZetCompany"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Twitter page of eRZet Company"
                 >
                   <svg
                     strokeLinejoin="round"
@@ -200,6 +202,7 @@ const Footer = () => {
                   href="https://www.instagram.com/erzetcompany/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Instagram page of eRZet Company"
                 >
                   <svg
                     strokeLinejoin="round"
@@ -227,6 +230,7 @@ const Footer = () => {
                   href="https://www.linkedin.com/company/erzet"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Linkedin page of eRZet Company"
                 >
                   <svg
                     strokeLinejoin="round"
