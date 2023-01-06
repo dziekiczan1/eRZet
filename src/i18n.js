@@ -97,6 +97,8 @@ const resources = {
       eCommerce: "e-Sklep",
       blogWebsite: "Strona Bloga",
       other: "Inne",
+      pricingInfo:
+        "Zapraszamy do kontaktu w celu ustalenia szczegółów dotyczących projektowania stron internetowych. Cenę ustalamy indywidualnie dla każdego klienta, biorąc pod uwagę jego potrzeby i oczekiwania. Chętnie odpowiemy na wszelkie pytania i pomożemy w doborze najlepszej opcji dla Państwa firmy.",
     },
   },
 };

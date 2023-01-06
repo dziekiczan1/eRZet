@@ -66,15 +66,35 @@ const Pricing = () => {
           <div className="w-full h-2 bg-gradient-to-r from-orange-100 to-transparent"></div>
         </Heading>
         {isSend ? (
-          <div className="w-full text-center text-2xl text-white">
+          <p
+            className={
+              theme === "dark"
+                ? "w-full text-center text-2xl text-white my-4"
+                : "w-full text-center text-2xl text-slate-600 my-4"
+            }
+          >
             {t("sendSuccess")}
-          </div>
+          </p>
+        ) : isError ? (
+          <p
+            className={
+              theme === "dark"
+                ? "w-full text-center text-2xl text-white my-4"
+                : "w-full text-center text-2xl text-slate-600 my-4"
+            }
+          >
+            {t("sendError")}
+          </p>
         ) : (
-          isError && (
-            <div className="w-full text-center text-2xl text-white">
-              {t("sendError")}
-            </div>
-          )
+          <p
+            className={
+              theme === "dark"
+                ? "text-white text-center mx-8 my-4"
+                : "text-slate-600 text-center mx-8 my-4"
+            }
+          >
+            {t("pricingInfo")}
+          </p>
         )}
         <div className="flex flex-col lg:flex-row w-full mb-12">
           <motion.div
