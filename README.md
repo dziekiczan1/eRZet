@@ -1,6 +1,8 @@
 # eRZet company website
 
-### [Live Site](https://piotr.rzadkowolski.dev/)
+### [Live Site](https://erzet.dev/)
+
+![I don't have a window](https://piotr.rzadkowolski.dev/assets/proj14.webp)
 
 ## Introduction
 This is a code repository for the **eRZet Company** project
