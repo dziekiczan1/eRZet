@@ -2,7 +2,7 @@
 
 ### [Live Site](https://erzet.dev/)
 
-![I don't have a window](https://piotr.rzadkowolski.dev/assets/proj14.webp)
+![eRZet](https://piotr.rzadkowolski.dev/assets/proj14.webp)
 
 ## Introduction
 This is a code repository for the **eRZet Company** project
